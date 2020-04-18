@@ -1,0 +1,296 @@
+
+
+Microchip MPLAB XC8 Assembler V2.10 build 88905656 
+                                                                                                           Fri Apr 17 22:31:22 2020
+
+
+     1                           	processor	18F4550
+     2                           	opt	pw 132
+     3                           	psect	myspace,local,reloc=2,class=CODE,delta=1
+     4  0000                     stk_offset	set	0
+     5  0000                     auto_size	set	0
+     6                           
+     7                           ; stack_auto defines a symbol /name/_offset which equates to the
+     8                           ; stack offset of the auto object in question
+     9  0000                     
+    10                           ; stack_param defines a symbol /name/_offset which equates to the
+    11                           ; stack offset of the parameter object in question
+    12  0000                     
+    13                           ; alloc_stack adjusts the SP to allocate space for auto objects
+    14                           ; it also links in to the btemp symbol so that can be used
+    15  0000                     
+    16                           ; restore_stack adjusts the SP to remove all auto and parameter
+    17                           ; objects from the stack prior to returning from a function
+    18  0000                     
+    19                           	psect	myspace
+    20  0029AE                     _Enviar_Bits:
+    21                           	opt callstack 0
+    22  0029AE  BF67               	btfsc	_ByteG,7,b
+    23  0029B0  EFDD  F014         	goto	Enviar_Bit23_1
+    24  0029B4  D8AE               	call	NeoBit0
+    25  0029B6  EFDE  F014         	goto	Enviar_Bit22
+    26  0029BA                     Enviar_Bit23_1:
+    27  0029BA  D8A1               	call	NeoBit1
+    28  0029BC                     Enviar_Bit22:
+    29  0029BC  BD67               	btfsc	_ByteG,6,b
+    30  0029BE  EFE4  F014         	goto	Enviar_Bit22_1
+    31  0029C2  D8A7               	call	NeoBit0
+    32  0029C4  EFE5  F014         	goto	Enviar_Bit21
+    33  0029C8                     Enviar_Bit22_1:
+    34  0029C8  D89A               	call	NeoBit1
+    35  0029CA                     Enviar_Bit21:
+    36  0029CA  BB67               	btfsc	_ByteG,5,b
+    37  0029CC  EFEB  F014         	goto	Enviar_Bit21_1
+    38  0029D0  D8A0               	call	NeoBit0
+    39  0029D2  EFEC  F014         	goto	Enviar_Bit20
+    40  0029D6                     Enviar_Bit21_1:
+    41  0029D6  D893               	call	NeoBit1
+    42  0029D8                     Enviar_Bit20:
+    43  0029D8  B967               	btfsc	_ByteG,4,b
+    44  0029DA  EFF2  F014         	goto	Enviar_Bit20_1
+    45  0029DE  D899               	call	NeoBit0
+    46  0029E0  EFF3  F014         	goto	Enviar_Bit19
+    47  0029E4                     Enviar_Bit20_1:
+    48  0029E4  D88C               	call	NeoBit1
+    49  0029E6                     Enviar_Bit19:
+    50  0029E6  B767               	btfsc	_ByteG,3,b
+    51  0029E8  EFF9  F014         	goto	Enviar_Bit19_1
+    52  0029EC  D892               	call	NeoBit0
+    53  0029EE  EFFA  F014         	goto	Enviar_Bit18
+    54  0029F2                     Enviar_Bit19_1:
+    55  0029F2  D885               	call	NeoBit1
+    56  0029F4                     Enviar_Bit18:
+    57  0029F4  B567               	btfsc	_ByteG,2,b
+    58  0029F6  EF00  F015         	goto	Enviar_Bit18_1
+    59  0029FA  D88B               	call	NeoBit0
+    60  0029FC  EF01  F015         	goto	Enviar_Bit17
+    61  002A00                     Enviar_Bit18_1:
+    62  002A00  D87E               	call	NeoBit1
+    63  002A02                     Enviar_Bit17:
+    64  002A02  B367               	btfsc	_ByteG,1,b
+    65  002A04  EF07  F015         	goto	Enviar_Bit17_1
+    66  002A08  D884               	call	NeoBit0
+    67  002A0A  EF08  F015         	goto	Enviar_Bit16
+    68  002A0E                     Enviar_Bit17_1:
+    69  002A0E  D877               	call	NeoBit1
+    70  002A10                     Enviar_Bit16:
+    71  002A10  B167               	btfsc	_ByteG,0,b
+    72  002A12  EF0E  F015         	goto	Enviar_Bit16_1
+    73  002A16  D87D               	call	NeoBit0
+    74  002A18  EF0F  F015         	goto	Enviar_Bit15
+    75  002A1C                     Enviar_Bit16_1:
+    76  002A1C  D870               	call	NeoBit1
+    77  002A1E                     Enviar_Bit15:
+    78  002A1E  BF68               	btfsc	_ByteR,7,b
+    79  002A20  EF15  F015         	goto	Enviar_Bit15_1
+    80  002A24  D876               	call	NeoBit0
+    81  002A26  EF16  F015         	goto	Enviar_Bit14
+    82  002A2A                     Enviar_Bit15_1:
+    83  002A2A  D869               	call	NeoBit1
+    84  002A2C                     Enviar_Bit14:
+    85  002A2C  BD68               	btfsc	_ByteR,6,b
+    86  002A2E  EF1C  F015         	goto	Enviar_Bit14_1
+    87  002A32  D86F               	call	NeoBit0
+    88  002A34  EF1D  F015         	goto	Enviar_Bit13
+    89  002A38                     Enviar_Bit14_1:
+    90  002A38  D862               	call	NeoBit1
+    91  002A3A                     Enviar_Bit13:
+    92  002A3A  BB68               	btfsc	_ByteR,5,b
+    93  002A3C  EF23  F015         	goto	Enviar_Bit13_1
+    94  002A40  D868               	call	NeoBit0
+    95  002A42  EF24  F015         	goto	Enviar_Bit12
+    96  002A46                     Enviar_Bit13_1:
+    97  002A46  D85B               	call	NeoBit1
+    98  002A48                     Enviar_Bit12:
+    99  002A48  B968               	btfsc	_ByteR,4,b
+   100  002A4A  EF2A  F015         	goto	Enviar_Bit12_1
+   101  002A4E  D861               	call	NeoBit0
+   102  002A50  EF2B  F015         	goto	Enviar_Bit11
+   103  002A54                     Enviar_Bit12_1:
+   104  002A54  D854               	call	NeoBit1
+   105  002A56                     Enviar_Bit11:
+   106  002A56  B768               	btfsc	_ByteR,3,b
+   107  002A58  EF31  F015         	goto	Enviar_Bit11_1
+   108  002A5C  D85A               	call	NeoBit0
+   109  002A5E  EF32  F015         	goto	Enviar_Bit10
+   110  002A62                     Enviar_Bit11_1:
+   111  002A62  D84D               	call	NeoBit1
+   112  002A64                     Enviar_Bit10:
+   113  002A64  B568               	btfsc	_ByteR,2,b
+   114  002A66  EF38  F015         	goto	Enviar_Bit10_1
+   115  002A6A  D853               	call	NeoBit0
+   116  002A6C  EF39  F015         	goto	Enviar_Bit9
+   117  002A70                     Enviar_Bit10_1:
+   118  002A70  D846               	call	NeoBit1
+   119  002A72                     Enviar_Bit9:
+   120  002A72  B368               	btfsc	_ByteR,1,b
+   121  002A74  EF3F  F015         	goto	Enviar_Bit9_1
+   122  002A78  D84C               	call	NeoBit0
+   123  002A7A  EF40  F015         	goto	Enviar_Bit8
+   124  002A7E                     Enviar_Bit9_1:
+   125  002A7E  D83F               	call	NeoBit1
+   126  002A80                     Enviar_Bit8:
+   127  002A80  B168               	btfsc	_ByteR,0,b
+   128  002A82  EF46  F015         	goto	Enviar_Bit8_1
+   129  002A86  D845               	call	NeoBit0
+   130  002A88  EF47  F015         	goto	Enviar_Bit7
+   131  002A8C                     Enviar_Bit8_1:
+   132  002A8C  D838               	call	NeoBit1
+   133  002A8E                     Enviar_Bit7:
+   134  002A8E  BF66               	btfsc	_ByteB,7,b
+   135  002A90  EF4D  F015         	goto	Enviar_Bit7_1
+   136  002A94  D83E               	call	NeoBit0
+   137  002A96  EF4E  F015         	goto	Enviar_Bit6
+   138  002A9A                     Enviar_Bit7_1:
+   139  002A9A  D831               	call	NeoBit1
+   140  002A9C                     Enviar_Bit6:
+   141  002A9C  BD66               	btfsc	_ByteB,6,b
+   142  002A9E  EF54  F015         	goto	Enviar_Bit6_1
+   143  002AA2  D837               	call	NeoBit0
+   144  002AA4  EF55  F015         	goto	Enviar_Bit5
+   145  002AA8                     Enviar_Bit6_1:
+   146  002AA8  D82A               	call	NeoBit1
+   147  002AAA                     Enviar_Bit5:
+   148  002AAA  BB66               	btfsc	_ByteB,5,b
+   149  002AAC  EF5B  F015         	goto	Enviar_Bit5_1
+   150  002AB0  D830               	call	NeoBit0
+   151  002AB2  EF5C  F015         	goto	Enviar_Bit4
+   152  002AB6                     Enviar_Bit5_1:
+   153  002AB6  D823               	call	NeoBit1
+   154  002AB8                     Enviar_Bit4:
+   155  002AB8  B966               	btfsc	_ByteB,4,b
+   156  002ABA  EF62  F015         	goto	Enviar_Bit4_1
+   157  002ABE  D829               	call	NeoBit0
+   158  002AC0  EF63  F015         	goto	Enviar_Bit3
+   159  002AC4                     Enviar_Bit4_1:
+   160  002AC4  D81C               	call	NeoBit1
+   161  002AC6                     Enviar_Bit3:
+   162  002AC6  B766               	btfsc	_ByteB,3,b
+   163  002AC8  EF69  F015         	goto	Enviar_Bit3_1
+   164  002ACC  D822               	call	NeoBit0
+   165  002ACE  EF6A  F015         	goto	Enviar_Bit2
+   166  002AD2                     Enviar_Bit3_1:
+   167  002AD2  D815               	call	NeoBit1
+   168  002AD4                     Enviar_Bit2:
+   169  002AD4  B566               	btfsc	_ByteB,2,b
+   170  002AD6  EF70  F015         	goto	Enviar_Bit2_1
+   171  002ADA  D81B               	call	NeoBit0
+   172  002ADC  EF71  F015         	goto	Enviar_Bit1
+   173  002AE0                     Enviar_Bit2_1:
+   174  002AE0  D80E               	call	NeoBit1
+   175  002AE2                     Enviar_Bit1:
+   176  002AE2  B366               	btfsc	_ByteB,1,b
+   177  002AE4  EF77  F015         	goto	Enviar_Bit1_1
+   178  002AE8  D814               	call	NeoBit0
+   179  002AEA  EF78  F015         	goto	Enviar_Bit0
+   180  002AEE                     Enviar_Bit1_1:
+   181  002AEE  D807               	call	NeoBit1
+   182  002AF0                     Enviar_Bit0:
+   183  002AF0  B166               	btfsc	_ByteB,0,b
+   184  002AF2  EF7D  F015         	goto	Enviar_Bit0_1
+   185  002AF6  D80D               	call	NeoBit0
+   186  002AF8  0012               	return	
+   187  002AFA                     Enviar_Bit0_1:
+   188  002AFA  D801               	call	NeoBit1
+   189  002AFC  0012               	return	
+   190  002AFE                     NeoBit1:
+   191                           
+   192                           ;2 cycles from call
+   193  002AFE  888A               	bsf	3978,4,c	;1 cycle
+   194  002B00  F000               	nop		;1 cycle
+   195  002B02  F000               	nop		;1 cycle
+   196  002B04  F000               	nop		;1 cycle
+   197  002B06  F000               	nop		;1 cycle
+   198  002B08  F000               	nop		;1 cycle
+   199  002B0A  F000               	nop		;1 cycle
+   200  002B0C  F000               	nop		;1 cycle
+   201                           
+   202                           ;nop ;1 cycle
+   203                           ;Time in high of 750nS
+   204  002B0E  988A               	bcf	3978,4,c	;1 cycle
+   205  002B10  0012               	return		;2 cycles
+   206  002B12                     NeoBit0:
+   207                           
+   208                           ;2 cycles del call
+   209  002B12  888A               	bsf	3978,4,c	;1 cycle
+   210  002B14  F000               	nop		;1 cycle
+   211  002B16  F000               	nop		;1 cycle
+   212  002B18  F000               	nop		;1 cycle
+   213                           
+   214                           ;Time in high de 333.3nS
+   215  002B1A  988A               	bcf	3978,4,c	;1 cycle
+   216                           
+   217                           ;nop ;1 cycle
+   218                           ;nop ;1 cycle
+   219                           ;nop ;1 cycle
+   220                           ;nop ;1 cycle
+   221  002B1C  0012               	return		;2 cycles
+   222                           tosu	equ	0xFFF
+   223                           tosh	equ	0xFFE
+   224                           tosl	equ	0xFFD
+   225                           stkptr	equ	0xFFC
+   226                           pclatu	equ	0xFFB
+   227                           pclath	equ	0xFFA
+   228                           pcl	equ	0xFF9
+   229                           tblptru	equ	0xFF8
+   230                           tblptrh	equ	0xFF7
+   231                           tblptrl	equ	0xFF6
+   232                           tablat	equ	0xFF5
+   233                           prodh	equ	0xFF4
+   234                           prodl	equ	0xFF3
+   235                           indf0	equ	0xFEF
+   236                           postinc0	equ	0xFEE
+   237                           postdec0	equ	0xFED
+   238                           preinc0	equ	0xFEC
+   239                           plusw0	equ	0xFEB
+   240                           fsr0h	equ	0xFEA
+   241                           fsr0l	equ	0xFE9
+   242                           wreg	equ	0xFE8
+   243                           indf1	equ	0xFE7
+   244                           postinc1	equ	0xFE6
+   245                           postdec1	equ	0xFE5
+   246                           preinc1	equ	0xFE4
+   247                           plusw1	equ	0xFE3
+   248                           fsr1h	equ	0xFE2
+   249                           fsr1l	equ	0xFE1
+   250                           bsr	equ	0xFE0
+   251                           indf2	equ	0xFDF
+   252                           postinc2	equ	0xFDE
+   253                           postdec2	equ	0xFDD
+   254                           preinc2	equ	0xFDC
+   255                           plusw2	equ	0xFDB
+   256                           fsr2h	equ	0xFDA
+   257                           fsr2l	equ	0xFD9
+   258                           status	equ	0xFD8
+
+
+Microchip Technology PIC18 Macro Assembler V2.10 build 88905656 
+Symbol Table                                                                                               Fri Apr 17 22:31:22 2020
+
+                         LATB 000F8A                    Enviar_Bit0 2AF0                    Enviar_Bit1 2AE2  
+                  Enviar_Bit2 2AD4                    Enviar_Bit3 2AC6                    Enviar_Bit4 2AB8  
+                  Enviar_Bit5 2AAA                    Enviar_Bit6 2A9C                    Enviar_Bit7 2A8E  
+                  Enviar_Bit8 2A80                    Enviar_Bit9 2A72                   Enviar_Bit10 2A64  
+                 Enviar_Bit11 2A56                   Enviar_Bit12 2A48                   Enviar_Bit20 29D8  
+                 Enviar_Bit13 2A3A                   Enviar_Bit21 29CA                   Enviar_Bit14 2A2C  
+                 Enviar_Bit22 29BC                   Enviar_Bit15 2A1E                   Enviar_Bit23 29AE  
+                 Enviar_Bit16 2A10                   Enviar_Bit17 2A02                   Enviar_Bit18 29F4  
+                 Enviar_Bit19 29E6                         _ByteB 0066                         _ByteG 0067  
+                       _ByteR 0068                  Enviar_Bit0_0 2AF6                  Enviar_Bit0_1 2AFA  
+                Enviar_Bit1_0 2AE8                  Enviar_Bit1_1 2AEE                  Enviar_Bit2_0 2ADA  
+                Enviar_Bit2_1 2AE0                  Enviar_Bit3_0 2ACC                  Enviar_Bit3_1 2AD2  
+                Enviar_Bit4_0 2ABE                  Enviar_Bit4_1 2AC4                  Enviar_Bit5_0 2AB0  
+                Enviar_Bit5_1 2AB6                  Enviar_Bit6_0 2AA2                  Enviar_Bit6_1 2AA8  
+                Enviar_Bit7_0 2A94                  Enviar_Bit7_1 2A9A                  Enviar_Bit8_0 2A86  
+                Enviar_Bit8_1 2A8C                  Enviar_Bit9_0 2A78                  Enviar_Bit9_1 2A7E  
+                      NeoBit0 2B12                        NeoBit1 2AFE                 Enviar_Bit10_0 2A6A  
+               Enviar_Bit10_1 2A70                 Enviar_Bit11_0 2A5C                 Enviar_Bit11_1 2A62  
+               Enviar_Bit12_0 2A4E                 Enviar_Bit20_0 29DE                 Enviar_Bit12_1 2A54  
+               Enviar_Bit20_1 29E4                 Enviar_Bit13_0 2A40                 Enviar_Bit21_0 29D0  
+               Enviar_Bit13_1 2A46                 Enviar_Bit21_1 29D6                 Enviar_Bit14_0 2A32  
+               Enviar_Bit22_0 29C2                 Enviar_Bit14_1 2A38                 Enviar_Bit22_1 29C8  
+               Enviar_Bit15_0 2A24                 Enviar_Bit23_0 29B4                 Enviar_Bit15_1 2A2A  
+               Enviar_Bit23_1 29BA                 Enviar_Bit16_0 2A16                 Enviar_Bit16_1 2A1C  
+               Enviar_Bit17_0 2A08                 Enviar_Bit17_1 2A0E                 Enviar_Bit18_0 29FA  
+               Enviar_Bit18_1 2A00                 Enviar_Bit19_0 29EC                 Enviar_Bit19_1 29F2  
+                 _Enviar_Bits 29AE  

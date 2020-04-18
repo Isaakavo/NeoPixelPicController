@@ -1,0 +1,3062 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"31 ./Patterns.h
+[; ;./Patterns.h: 31: void Time_Check(int Time);
+[v _Time_Check `(v ~T0 @X0 0 ef1`i ]
+"17 ./NeoFunctions.h
+[; ;./NeoFunctions.h: 17: void setAll(unsigned char Red, unsigned char Green, unsigned char Blue);
+[v _setAll `(v ~T0 @X0 0 ef3`uc`uc`uc ]
+"20 ./Patterns.h
+[; ;./Patterns.h: 20: void Delay_ms(int time);
+[v _Delay_ms `(v ~T0 @X0 0 ef1`i ]
+"18 ./NeoFunctions.h
+[; ;./NeoFunctions.h: 18: void setPixel(int n, unsigned char red,
+[v _setPixel `(v ~T0 @X0 0 ef4`i`uc`uc`uc ]
+"16
+[; ;./NeoFunctions.h: 16: void Show(void);
+[v _Show `(v ~T0 @X0 0 ef ]
+"32 ./Patterns.h
+[; ;./Patterns.h: 32: unsigned char * Wheel(int WheelPos);
+[v _Wheel `(*uc ~T0 @X0 0 ef1`i ]
+"19
+[; ;./Patterns.h: 19: unsigned char* staticWheel();
+[v _staticWheel `(*uc ~T0 @X0 0 e? ]
+[v F3179 `(v ~T0 @X0 1 tf1`ul ]
+"187 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18.h
+[v __delay `JF3179 ~T0 @X0 0 e ]
+[p i __delay ]
+"14 ./Main.h
+[p x PLLDIV = 2 CPUDIV = OSC1_PLL2 USBDIV = 1 ]
+"17
+[p x FOSC = HSPLL_HS FCMEN = OFF IESO = ON ]
+"20
+[p x PWRT = ON BOR = ON BORV = 2 VREGEN = OFF ]
+"23
+[p x WDT = OFF WDTPS = 32768 ]
+"26
+[p x CCP2MX = OFF PBADEN = OFF LPT1OSC = OFF MCLRE = OFF ]
+"29
+[p x STVREN = ON LVP = OFF ICPRT = OFF XINST = OFF ]
+"32
+[p x CP0 = OFF CP1 = OFF CP2 = OFF CP3 = OFF ]
+"35
+[p x CPB = OFF CPD = OFF ]
+"37
+[p x WRT0 = OFF WRT1 = OFF  WRT2 = OFF WRT3 = OFF ]
+"40
+[p x WRTC = OFF WRTB = OFF WRTD = OFF ]
+"43
+[p x EBTR0 = OFF EBTR1 = OFF EBTR2 = OFF EBTR3 = OFF ]
+"46
+[p x EBTRB = OFF ]
+"54 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 54: __asm("SPPDATA equ 0F62h");
+[; <" SPPDATA equ 0F62h ;# ">
+"74
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 74: __asm("SPPCFG equ 0F63h");
+[; <" SPPCFG equ 0F63h ;# ">
+"151
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 151: __asm("SPPEPS equ 0F64h");
+[; <" SPPEPS equ 0F64h ;# ">
+"225
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 225: __asm("SPPCON equ 0F65h");
+[; <" SPPCON equ 0F65h ;# ">
+"251
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 251: __asm("UFRM equ 0F66h");
+[; <" UFRM equ 0F66h ;# ">
+"258
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 258: __asm("UFRML equ 0F66h");
+[; <" UFRML equ 0F66h ;# ">
+"336
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 336: __asm("UFRMH equ 0F67h");
+[; <" UFRMH equ 0F67h ;# ">
+"376
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 376: __asm("UIR equ 0F68h");
+[; <" UIR equ 0F68h ;# ">
+"432
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 432: __asm("UIE equ 0F69h");
+[; <" UIE equ 0F69h ;# ">
+"488
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 488: __asm("UEIR equ 0F6Ah");
+[; <" UEIR equ 0F6Ah ;# ">
+"539
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 539: __asm("UEIE equ 0F6Bh");
+[; <" UEIE equ 0F6Bh ;# ">
+"590
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 590: __asm("USTAT equ 0F6Ch");
+[; <" USTAT equ 0F6Ch ;# ">
+"650
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 650: __asm("UCON equ 0F6Dh");
+[; <" UCON equ 0F6Dh ;# ">
+"701
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 701: __asm("UADDR equ 0F6Eh");
+[; <" UADDR equ 0F6Eh ;# ">
+"765
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 765: __asm("UCFG equ 0F6Fh");
+[; <" UCFG equ 0F6Fh ;# ">
+"844
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 844: __asm("UEP0 equ 0F70h");
+[; <" UEP0 equ 0F70h ;# ">
+"952
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 952: __asm("UEP1 equ 0F71h");
+[; <" UEP1 equ 0F71h ;# ">
+"1060
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 1060: __asm("UEP2 equ 0F72h");
+[; <" UEP2 equ 0F72h ;# ">
+"1168
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 1168: __asm("UEP3 equ 0F73h");
+[; <" UEP3 equ 0F73h ;# ">
+"1276
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 1276: __asm("UEP4 equ 0F74h");
+[; <" UEP4 equ 0F74h ;# ">
+"1384
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 1384: __asm("UEP5 equ 0F75h");
+[; <" UEP5 equ 0F75h ;# ">
+"1492
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 1492: __asm("UEP6 equ 0F76h");
+[; <" UEP6 equ 0F76h ;# ">
+"1600
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 1600: __asm("UEP7 equ 0F77h");
+[; <" UEP7 equ 0F77h ;# ">
+"1708
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 1708: __asm("UEP8 equ 0F78h");
+[; <" UEP8 equ 0F78h ;# ">
+"1784
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 1784: __asm("UEP9 equ 0F79h");
+[; <" UEP9 equ 0F79h ;# ">
+"1860
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 1860: __asm("UEP10 equ 0F7Ah");
+[; <" UEP10 equ 0F7Ah ;# ">
+"1936
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 1936: __asm("UEP11 equ 0F7Bh");
+[; <" UEP11 equ 0F7Bh ;# ">
+"2012
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 2012: __asm("UEP12 equ 0F7Ch");
+[; <" UEP12 equ 0F7Ch ;# ">
+"2088
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 2088: __asm("UEP13 equ 0F7Dh");
+[; <" UEP13 equ 0F7Dh ;# ">
+"2164
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 2164: __asm("UEP14 equ 0F7Eh");
+[; <" UEP14 equ 0F7Eh ;# ">
+"2240
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 2240: __asm("UEP15 equ 0F7Fh");
+[; <" UEP15 equ 0F7Fh ;# ">
+"2316
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 2316: __asm("PORTA equ 0F80h");
+[; <" PORTA equ 0F80h ;# ">
+"2455
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 2455: __asm("PORTB equ 0F81h");
+[; <" PORTB equ 0F81h ;# ">
+"2565
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 2565: __asm("PORTC equ 0F82h");
+[; <" PORTC equ 0F82h ;# ">
+"2707
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 2707: __asm("PORTD equ 0F83h");
+[; <" PORTD equ 0F83h ;# ">
+"2828
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 2828: __asm("PORTE equ 0F84h");
+[; <" PORTE equ 0F84h ;# ">
+"2975
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 2975: __asm("LATA equ 0F89h");
+[; <" LATA equ 0F89h ;# ">
+"3075
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3075: __asm("LATB equ 0F8Ah");
+[; <" LATB equ 0F8Ah ;# ">
+"3187
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3187: __asm("LATC equ 0F8Bh");
+[; <" LATC equ 0F8Bh ;# ">
+"3265
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3265: __asm("LATD equ 0F8Ch");
+[; <" LATD equ 0F8Ch ;# ">
+"3377
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3377: __asm("LATE equ 0F8Dh");
+[; <" LATE equ 0F8Dh ;# ">
+"3429
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3429: __asm("TRISA equ 0F92h");
+[; <" TRISA equ 0F92h ;# ">
+"3434
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3434: __asm("DDRA equ 0F92h");
+[; <" DDRA equ 0F92h ;# ">
+"3627
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3627: __asm("TRISB equ 0F93h");
+[; <" TRISB equ 0F93h ;# ">
+"3632
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3632: __asm("DDRB equ 0F93h");
+[; <" DDRB equ 0F93h ;# ">
+"3849
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3849: __asm("TRISC equ 0F94h");
+[; <" TRISC equ 0F94h ;# ">
+"3854
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3854: __asm("DDRC equ 0F94h");
+[; <" DDRC equ 0F94h ;# ">
+"4003
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 4003: __asm("TRISD equ 0F95h");
+[; <" TRISD equ 0F95h ;# ">
+"4008
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 4008: __asm("DDRD equ 0F95h");
+[; <" DDRD equ 0F95h ;# ">
+"4225
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 4225: __asm("TRISE equ 0F96h");
+[; <" TRISE equ 0F96h ;# ">
+"4230
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 4230: __asm("DDRE equ 0F96h");
+[; <" DDRE equ 0F96h ;# ">
+"4327
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 4327: __asm("OSCTUNE equ 0F9Bh");
+[; <" OSCTUNE equ 0F9Bh ;# ">
+"4386
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 4386: __asm("PIE1 equ 0F9Dh");
+[; <" PIE1 equ 0F9Dh ;# ">
+"4470
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 4470: __asm("PIR1 equ 0F9Eh");
+[; <" PIR1 equ 0F9Eh ;# ">
+"4554
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 4554: __asm("IPR1 equ 0F9Fh");
+[; <" IPR1 equ 0F9Fh ;# ">
+"4638
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 4638: __asm("PIE2 equ 0FA0h");
+[; <" PIE2 equ 0FA0h ;# ">
+"4709
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 4709: __asm("PIR2 equ 0FA1h");
+[; <" PIR2 equ 0FA1h ;# ">
+"4780
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 4780: __asm("IPR2 equ 0FA2h");
+[; <" IPR2 equ 0FA2h ;# ">
+"4851
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 4851: __asm("EECON1 equ 0FA6h");
+[; <" EECON1 equ 0FA6h ;# ">
+"4917
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 4917: __asm("EECON2 equ 0FA7h");
+[; <" EECON2 equ 0FA7h ;# ">
+"4924
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 4924: __asm("EEDATA equ 0FA8h");
+[; <" EEDATA equ 0FA8h ;# ">
+"4931
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 4931: __asm("EEADR equ 0FA9h");
+[; <" EEADR equ 0FA9h ;# ">
+"4938
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 4938: __asm("RCSTA equ 0FABh");
+[; <" RCSTA equ 0FABh ;# ">
+"4943
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 4943: __asm("RCSTA1 equ 0FABh");
+[; <" RCSTA1 equ 0FABh ;# ">
+"5148
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 5148: __asm("TXSTA equ 0FACh");
+[; <" TXSTA equ 0FACh ;# ">
+"5153
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 5153: __asm("TXSTA1 equ 0FACh");
+[; <" TXSTA1 equ 0FACh ;# ">
+"5404
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 5404: __asm("TXREG equ 0FADh");
+[; <" TXREG equ 0FADh ;# ">
+"5409
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 5409: __asm("TXREG1 equ 0FADh");
+[; <" TXREG1 equ 0FADh ;# ">
+"5416
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 5416: __asm("RCREG equ 0FAEh");
+[; <" RCREG equ 0FAEh ;# ">
+"5421
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 5421: __asm("RCREG1 equ 0FAEh");
+[; <" RCREG1 equ 0FAEh ;# ">
+"5428
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 5428: __asm("SPBRG equ 0FAFh");
+[; <" SPBRG equ 0FAFh ;# ">
+"5433
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 5433: __asm("SPBRG1 equ 0FAFh");
+[; <" SPBRG1 equ 0FAFh ;# ">
+"5440
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 5440: __asm("SPBRGH equ 0FB0h");
+[; <" SPBRGH equ 0FB0h ;# ">
+"5447
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 5447: __asm("T3CON equ 0FB1h");
+[; <" T3CON equ 0FB1h ;# ">
+"5568
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 5568: __asm("TMR3 equ 0FB2h");
+[; <" TMR3 equ 0FB2h ;# ">
+"5575
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 5575: __asm("TMR3L equ 0FB2h");
+[; <" TMR3L equ 0FB2h ;# ">
+"5582
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 5582: __asm("TMR3H equ 0FB3h");
+[; <" TMR3H equ 0FB3h ;# ">
+"5589
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 5589: __asm("CMCON equ 0FB4h");
+[; <" CMCON equ 0FB4h ;# ">
+"5679
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 5679: __asm("CVRCON equ 0FB5h");
+[; <" CVRCON equ 0FB5h ;# ">
+"5764
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 5764: __asm("ECCP1AS equ 0FB6h");
+[; <" ECCP1AS equ 0FB6h ;# ">
+"5769
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 5769: __asm("CCP1AS equ 0FB6h");
+[; <" CCP1AS equ 0FB6h ;# ">
+"5926
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 5926: __asm("ECCP1DEL equ 0FB7h");
+[; <" ECCP1DEL equ 0FB7h ;# ">
+"5931
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 5931: __asm("CCP1DEL equ 0FB7h");
+[; <" CCP1DEL equ 0FB7h ;# ">
+"6064
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6064: __asm("BAUDCON equ 0FB8h");
+[; <" BAUDCON equ 0FB8h ;# ">
+"6069
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6069: __asm("BAUDCTL equ 0FB8h");
+[; <" BAUDCTL equ 0FB8h ;# ">
+"6244
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6244: __asm("CCP2CON equ 0FBAh");
+[; <" CCP2CON equ 0FBAh ;# ">
+"6308
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6308: __asm("CCPR2 equ 0FBBh");
+[; <" CCPR2 equ 0FBBh ;# ">
+"6315
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6315: __asm("CCPR2L equ 0FBBh");
+[; <" CCPR2L equ 0FBBh ;# ">
+"6322
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6322: __asm("CCPR2H equ 0FBCh");
+[; <" CCPR2H equ 0FBCh ;# ">
+"6329
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6329: __asm("CCP1CON equ 0FBDh");
+[; <" CCP1CON equ 0FBDh ;# ">
+"6334
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6334: __asm("ECCP1CON equ 0FBDh");
+[; <" ECCP1CON equ 0FBDh ;# ">
+"6491
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6491: __asm("CCPR1 equ 0FBEh");
+[; <" CCPR1 equ 0FBEh ;# ">
+"6498
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6498: __asm("CCPR1L equ 0FBEh");
+[; <" CCPR1L equ 0FBEh ;# ">
+"6505
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6505: __asm("CCPR1H equ 0FBFh");
+[; <" CCPR1H equ 0FBFh ;# ">
+"6512
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6512: __asm("ADCON2 equ 0FC0h");
+[; <" ADCON2 equ 0FC0h ;# ">
+"6583
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6583: __asm("ADCON1 equ 0FC1h");
+[; <" ADCON1 equ 0FC1h ;# ">
+"6668
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6668: __asm("ADCON0 equ 0FC2h");
+[; <" ADCON0 equ 0FC2h ;# ">
+"6787
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6787: __asm("ADRES equ 0FC3h");
+[; <" ADRES equ 0FC3h ;# ">
+"6794
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6794: __asm("ADRESL equ 0FC3h");
+[; <" ADRESL equ 0FC3h ;# ">
+"6801
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6801: __asm("ADRESH equ 0FC4h");
+[; <" ADRESH equ 0FC4h ;# ">
+"6808
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6808: __asm("SSPCON2 equ 0FC5h");
+[; <" SSPCON2 equ 0FC5h ;# ">
+"6870
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6870: __asm("SSPCON1 equ 0FC6h");
+[; <" SSPCON1 equ 0FC6h ;# ">
+"6940
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6940: __asm("SSPSTAT equ 0FC7h");
+[; <" SSPSTAT equ 0FC7h ;# ">
+"7188
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 7188: __asm("SSPADD equ 0FC8h");
+[; <" SSPADD equ 0FC8h ;# ">
+"7195
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 7195: __asm("SSPBUF equ 0FC9h");
+[; <" SSPBUF equ 0FC9h ;# ">
+"7202
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 7202: __asm("T2CON equ 0FCAh");
+[; <" T2CON equ 0FCAh ;# ">
+"7300
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 7300: __asm("PR2 equ 0FCBh");
+[; <" PR2 equ 0FCBh ;# ">
+"7305
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 7305: __asm("MEMCON equ 0FCBh");
+[; <" MEMCON equ 0FCBh ;# ">
+"7410
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 7410: __asm("TMR2 equ 0FCCh");
+[; <" TMR2 equ 0FCCh ;# ">
+"7417
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 7417: __asm("T1CON equ 0FCDh");
+[; <" T1CON equ 0FCDh ;# ">
+"7520
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 7520: __asm("TMR1 equ 0FCEh");
+[; <" TMR1 equ 0FCEh ;# ">
+"7527
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 7527: __asm("TMR1L equ 0FCEh");
+[; <" TMR1L equ 0FCEh ;# ">
+"7534
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 7534: __asm("TMR1H equ 0FCFh");
+[; <" TMR1H equ 0FCFh ;# ">
+"7541
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 7541: __asm("RCON equ 0FD0h");
+[; <" RCON equ 0FD0h ;# ">
+"7690
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 7690: __asm("WDTCON equ 0FD1h");
+[; <" WDTCON equ 0FD1h ;# ">
+"7718
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 7718: __asm("HLVDCON equ 0FD2h");
+[; <" HLVDCON equ 0FD2h ;# ">
+"7723
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 7723: __asm("LVDCON equ 0FD2h");
+[; <" LVDCON equ 0FD2h ;# ">
+"7988
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 7988: __asm("OSCCON equ 0FD3h");
+[; <" OSCCON equ 0FD3h ;# ">
+"8071
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8071: __asm("T0CON equ 0FD5h");
+[; <" T0CON equ 0FD5h ;# ">
+"8141
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8141: __asm("TMR0 equ 0FD6h");
+[; <" TMR0 equ 0FD6h ;# ">
+"8148
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8148: __asm("TMR0L equ 0FD6h");
+[; <" TMR0L equ 0FD6h ;# ">
+"8155
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8155: __asm("TMR0H equ 0FD7h");
+[; <" TMR0H equ 0FD7h ;# ">
+"8162
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8162: __asm("STATUS equ 0FD8h");
+[; <" STATUS equ 0FD8h ;# ">
+"8233
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8233: __asm("FSR2 equ 0FD9h");
+[; <" FSR2 equ 0FD9h ;# ">
+"8240
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8240: __asm("FSR2L equ 0FD9h");
+[; <" FSR2L equ 0FD9h ;# ">
+"8247
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8247: __asm("FSR2H equ 0FDAh");
+[; <" FSR2H equ 0FDAh ;# ">
+"8254
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8254: __asm("PLUSW2 equ 0FDBh");
+[; <" PLUSW2 equ 0FDBh ;# ">
+"8261
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8261: __asm("PREINC2 equ 0FDCh");
+[; <" PREINC2 equ 0FDCh ;# ">
+"8268
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8268: __asm("POSTDEC2 equ 0FDDh");
+[; <" POSTDEC2 equ 0FDDh ;# ">
+"8275
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8275: __asm("POSTINC2 equ 0FDEh");
+[; <" POSTINC2 equ 0FDEh ;# ">
+"8282
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8282: __asm("INDF2 equ 0FDFh");
+[; <" INDF2 equ 0FDFh ;# ">
+"8289
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8289: __asm("BSR equ 0FE0h");
+[; <" BSR equ 0FE0h ;# ">
+"8296
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8296: __asm("FSR1 equ 0FE1h");
+[; <" FSR1 equ 0FE1h ;# ">
+"8303
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8303: __asm("FSR1L equ 0FE1h");
+[; <" FSR1L equ 0FE1h ;# ">
+"8310
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8310: __asm("FSR1H equ 0FE2h");
+[; <" FSR1H equ 0FE2h ;# ">
+"8317
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8317: __asm("PLUSW1 equ 0FE3h");
+[; <" PLUSW1 equ 0FE3h ;# ">
+"8324
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8324: __asm("PREINC1 equ 0FE4h");
+[; <" PREINC1 equ 0FE4h ;# ">
+"8331
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8331: __asm("POSTDEC1 equ 0FE5h");
+[; <" POSTDEC1 equ 0FE5h ;# ">
+"8338
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8338: __asm("POSTINC1 equ 0FE6h");
+[; <" POSTINC1 equ 0FE6h ;# ">
+"8345
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8345: __asm("INDF1 equ 0FE7h");
+[; <" INDF1 equ 0FE7h ;# ">
+"8352
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8352: __asm("WREG equ 0FE8h");
+[; <" WREG equ 0FE8h ;# ">
+"8359
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8359: __asm("FSR0 equ 0FE9h");
+[; <" FSR0 equ 0FE9h ;# ">
+"8366
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8366: __asm("FSR0L equ 0FE9h");
+[; <" FSR0L equ 0FE9h ;# ">
+"8373
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8373: __asm("FSR0H equ 0FEAh");
+[; <" FSR0H equ 0FEAh ;# ">
+"8380
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8380: __asm("PLUSW0 equ 0FEBh");
+[; <" PLUSW0 equ 0FEBh ;# ">
+"8387
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8387: __asm("PREINC0 equ 0FECh");
+[; <" PREINC0 equ 0FECh ;# ">
+"8394
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8394: __asm("POSTDEC0 equ 0FEDh");
+[; <" POSTDEC0 equ 0FEDh ;# ">
+"8401
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8401: __asm("POSTINC0 equ 0FEEh");
+[; <" POSTINC0 equ 0FEEh ;# ">
+"8408
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8408: __asm("INDF0 equ 0FEFh");
+[; <" INDF0 equ 0FEFh ;# ">
+"8415
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8415: __asm("INTCON3 equ 0FF0h");
+[; <" INTCON3 equ 0FF0h ;# ">
+"8507
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8507: __asm("INTCON2 equ 0FF1h");
+[; <" INTCON2 equ 0FF1h ;# ">
+"8584
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8584: __asm("INTCON equ 0FF2h");
+[; <" INTCON equ 0FF2h ;# ">
+"8701
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8701: __asm("PROD equ 0FF3h");
+[; <" PROD equ 0FF3h ;# ">
+"8708
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8708: __asm("PRODL equ 0FF3h");
+[; <" PRODL equ 0FF3h ;# ">
+"8715
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8715: __asm("PRODH equ 0FF4h");
+[; <" PRODH equ 0FF4h ;# ">
+"8722
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8722: __asm("TABLAT equ 0FF5h");
+[; <" TABLAT equ 0FF5h ;# ">
+"8731
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8731: __asm("TBLPTR equ 0FF6h");
+[; <" TBLPTR equ 0FF6h ;# ">
+"8738
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8738: __asm("TBLPTRL equ 0FF6h");
+[; <" TBLPTRL equ 0FF6h ;# ">
+"8745
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8745: __asm("TBLPTRH equ 0FF7h");
+[; <" TBLPTRH equ 0FF7h ;# ">
+"8752
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8752: __asm("TBLPTRU equ 0FF8h");
+[; <" TBLPTRU equ 0FF8h ;# ">
+"8761
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8761: __asm("PCLAT equ 0FF9h");
+[; <" PCLAT equ 0FF9h ;# ">
+"8768
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8768: __asm("PC equ 0FF9h");
+[; <" PC equ 0FF9h ;# ">
+"8775
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8775: __asm("PCL equ 0FF9h");
+[; <" PCL equ 0FF9h ;# ">
+"8782
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8782: __asm("PCLATH equ 0FFAh");
+[; <" PCLATH equ 0FFAh ;# ">
+"8789
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8789: __asm("PCLATU equ 0FFBh");
+[; <" PCLATU equ 0FFBh ;# ">
+"8796
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8796: __asm("STKPTR equ 0FFCh");
+[; <" STKPTR equ 0FFCh ;# ">
+"8872
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8872: __asm("TOS equ 0FFDh");
+[; <" TOS equ 0FFDh ;# ">
+"8879
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8879: __asm("TOSL equ 0FFDh");
+[; <" TOSL equ 0FFDh ;# ">
+"8886
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8886: __asm("TOSH equ 0FFEh");
+[; <" TOSH equ 0FFEh ;# ">
+"8893
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8893: __asm("TOSU equ 0FFFh");
+[; <" TOSU equ 0FFFh ;# ">
+"12 ./NeoFunctions.h
+[; ;./NeoFunctions.h: 12: __near unsigned char ByteR, ByteG, ByteB;
+[v _ByteR `Nuc ~T0 @X0 1 e ]
+[v _ByteG `Nuc ~T0 @X0 1 e ]
+[v _ByteB `Nuc ~T0 @X0 1 e ]
+"13
+[; ;./NeoFunctions.h: 13: int NumofBytes[630];
+[v _NumofBytes `i ~T0 @X0 -> 630 `i e ]
+"14
+[; ;./NeoFunctions.h: 14: const int rOffset = 0, gOffset = 1, bOffset=2;
+[v _rOffset `Ci ~T0 @X0 1 e ]
+[i _rOffset
+-> 0 `i
+]
+[v _gOffset `Ci ~T0 @X0 1 e ]
+[i _gOffset
+-> 1 `i
+]
+[v _bOffset `Ci ~T0 @X0 1 e ]
+[i _bOffset
+-> 2 `i
+]
+"55 ./Main.h
+[; ;./Main.h: 55: const int NeoNum = 210;
+[v _NeoNum `Ci ~T0 @X0 1 e ]
+[i _NeoNum
+-> 210 `i
+]
+"56
+[; ;./Main.h: 56: volatile unsigned char BT_RC[5];
+[v _BT_RC `Vuc ~T0 @X0 -> 5 `i e ]
+"57
+[; ;./Main.h: 57: volatile unsigned char BT_Patron;
+[v _BT_Patron `Vuc ~T0 @X0 1 e ]
+"58
+[; ;./Main.h: 58: volatile unsigned char BT_Tiempo;
+[v _BT_Tiempo `Vuc ~T0 @X0 1 e ]
+"59
+[; ;./Main.h: 59: volatile unsigned char BT_Buff =0;
+[v _BT_Buff `Vuc ~T0 @X0 1 e ]
+[i _BT_Buff
+-> -> 0 `i `uc
+]
+"60
+[; ;./Main.h: 60: volatile unsigned char BT_RGB[3];
+[v _BT_RGB `Vuc ~T0 @X0 -> 3 `i e ]
+"61
+[; ;./Main.h: 61: volatile __bit BT_rainbow;
+[v _BT_rainbow `Vb ~T0 @X0 1 e ]
+"16 Patterns.c
+[; ;Patterns.c: 16: void RGBLoop(){
+[v _RGBLoop `(v ~T0 @X0 1 ef ]
+{
+[e :U _RGBLoop ]
+[f ]
+"17
+[; ;Patterns.c: 17:   Time_Check(1);
+[e ( _Time_Check (1 -> 1 `i ]
+"18
+[; ;Patterns.c: 18:   for(unsigned char j = 0; j < 3; j++ ) {
+{
+[v _j `uc ~T0 @X0 1 a ]
+[e = _j -> -> 0 `i `uc ]
+[e $ < -> _j `i -> 3 `i 368  ]
+[e $U 369  ]
+[e :U 368 ]
+{
+"20
+[; ;Patterns.c: 20:     for(int k = 0; k < 255; k++) {
+{
+[v _k `i ~T0 @X0 1 a ]
+[e = _k -> 0 `i ]
+[e $ < _k -> 255 `i 371  ]
+[e $U 372  ]
+[e :U 371 ]
+{
+"21
+[; ;Patterns.c: 21:         switch(j) {
+[e $U 375  ]
+{
+"22
+[; ;Patterns.c: 22:           case 0: setAll(k,0,0); break;
+[e :U 376 ]
+[e ( _setAll (3 , , -> _k `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+[e $U 374  ]
+"23
+[; ;Patterns.c: 23:           case 1: setAll(0,k,0); break;
+[e :U 377 ]
+[e ( _setAll (3 , , -> -> 0 `i `uc -> _k `uc -> -> 0 `i `uc ]
+[e $U 374  ]
+"24
+[; ;Patterns.c: 24:           case 2: setAll(0,0,k); break;
+[e :U 378 ]
+[e ( _setAll (3 , , -> -> 0 `i `uc -> -> 0 `i `uc -> _k `uc ]
+[e $U 374  ]
+"25
+[; ;Patterns.c: 25:         }
+}
+[e $U 374  ]
+[e :U 375 ]
+[e [\ -> _j `i , $ -> 0 `i 376
+ , $ -> 1 `i 377
+ , $ -> 2 `i 378
+ 374 ]
+[e :U 374 ]
+"26
+[; ;Patterns.c: 26:         if(BT_Patron != 2){
+[e $ ! != -> _BT_Patron `i -> 2 `i 379  ]
+{
+"27
+[; ;Patterns.c: 27:             setAll(0,0,0);
+[e ( _setAll (3 , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"28
+[; ;Patterns.c: 28:             return;
+[e $UE 367  ]
+"29
+[; ;Patterns.c: 29:         }
+}
+[e :U 379 ]
+"30
+[; ;Patterns.c: 30:         Delay_ms(BT_Tiempo);
+[e ( _Delay_ms (1 -> _BT_Tiempo `i ]
+"31
+[; ;Patterns.c: 31:         }
+}
+[e ++ _k -> 1 `i ]
+[e $ < _k -> 255 `i 371  ]
+[e :U 372 ]
+}
+"33
+[; ;Patterns.c: 33:     for(int k = 255; k > 0; k--) {
+{
+[v _k `i ~T0 @X0 1 a ]
+[e = _k -> 255 `i ]
+[e $ > _k -> 0 `i 380  ]
+[e $U 381  ]
+[e :U 380 ]
+{
+"34
+[; ;Patterns.c: 34:       switch(j) {
+[e $U 384  ]
+{
+"35
+[; ;Patterns.c: 35:         case 0: setAll(k,0,0); break;
+[e :U 385 ]
+[e ( _setAll (3 , , -> _k `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+[e $U 383  ]
+"36
+[; ;Patterns.c: 36:         case 1: setAll(0,k,0); break;
+[e :U 386 ]
+[e ( _setAll (3 , , -> -> 0 `i `uc -> _k `uc -> -> 0 `i `uc ]
+[e $U 383  ]
+"37
+[; ;Patterns.c: 37:         case 2: setAll(0,0,k); break;
+[e :U 387 ]
+[e ( _setAll (3 , , -> -> 0 `i `uc -> -> 0 `i `uc -> _k `uc ]
+[e $U 383  ]
+"38
+[; ;Patterns.c: 38:       }
+}
+[e $U 383  ]
+[e :U 384 ]
+[e [\ -> _j `i , $ -> 0 `i 385
+ , $ -> 1 `i 386
+ , $ -> 2 `i 387
+ 383 ]
+[e :U 383 ]
+"39
+[; ;Patterns.c: 39:       if(BT_Patron != 2){
+[e $ ! != -> _BT_Patron `i -> 2 `i 388  ]
+{
+"40
+[; ;Patterns.c: 40:         setAll(0,0,0);
+[e ( _setAll (3 , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"41
+[; ;Patterns.c: 41:         return;
+[e $UE 367  ]
+"42
+[; ;Patterns.c: 42:       }
+}
+[e :U 388 ]
+"43
+[; ;Patterns.c: 43:       Delay_ms(BT_Tiempo);
+[e ( _Delay_ms (1 -> _BT_Tiempo `i ]
+"44
+[; ;Patterns.c: 44:     }
+}
+[e -- _k -> 1 `i ]
+[e $ > _k -> 0 `i 380  ]
+[e :U 381 ]
+}
+"45
+[; ;Patterns.c: 45:   }
+}
+[e ++ _j -> -> 1 `i `uc ]
+[e $ < -> _j `i -> 3 `i 368  ]
+[e :U 369 ]
+}
+"46
+[; ;Patterns.c: 46: }
+[e :UE 367 ]
+}
+"47
+[; ;Patterns.c: 47: void colorWipe(void) {
+[v _colorWipe `(v ~T0 @X0 1 ef ]
+{
+[e :U _colorWipe ]
+[f ]
+"48
+[; ;Patterns.c: 48:     Time_Check(10);
+[e ( _Time_Check (1 -> 10 `i ]
+"49
+[; ;Patterns.c: 49:     for(unsigned char i=0; i<NeoNum; i++) {
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i _NeoNum 390  ]
+[e $U 391  ]
+[e :U 390 ]
+{
+"50
+[; ;Patterns.c: 50:         setPixel(i, BT_RGB[0], BT_RGB[1], BT_RGB[2]);
+[e ( _setPixel (4 , , , -> _i `i *U + &U _BT_RGB * -> -> -> 0 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux *U + &U _BT_RGB * -> -> -> 1 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux *U + &U _BT_RGB * -> -> -> 2 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux ]
+"52
+[; ;Patterns.c: 52:         if(BT_Patron != 1|| BT_rainbow != 0)return;
+[e $ ! || != -> _BT_Patron `i -> 1 `i != -> _BT_rainbow `i -> 0 `i 393  ]
+[e $UE 389  ]
+[e :U 393 ]
+"53
+[; ;Patterns.c: 53:         Show();
+[e ( _Show ..  ]
+"54
+[; ;Patterns.c: 54:         Delay_ms(BT_Tiempo);
+[e ( _Delay_ms (1 -> _BT_Tiempo `i ]
+"55
+[; ;Patterns.c: 55:     }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i _NeoNum 390  ]
+[e :U 391 ]
+}
+"56
+[; ;Patterns.c: 56:     for(unsigned char i=0; i<NeoNum; i++) {
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i _NeoNum 394  ]
+[e $U 395  ]
+[e :U 394 ]
+{
+"58
+[; ;Patterns.c: 58:         setPixel(i,0,0,0);
+[e ( _setPixel (4 , , , -> _i `i -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"59
+[; ;Patterns.c: 59:         if(BT_Patron != 1|| BT_rainbow != 0)return;
+[e $ ! || != -> _BT_Patron `i -> 1 `i != -> _BT_rainbow `i -> 0 `i 397  ]
+[e $UE 389  ]
+[e :U 397 ]
+"60
+[; ;Patterns.c: 60:         Show();
+[e ( _Show ..  ]
+"61
+[; ;Patterns.c: 61:         Delay_ms(BT_Tiempo);
+[e ( _Delay_ms (1 -> _BT_Tiempo `i ]
+"62
+[; ;Patterns.c: 62:     }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i _NeoNum 394  ]
+[e :U 395 ]
+}
+"63
+[; ;Patterns.c: 63:     for(int i=NeoNum; i >= 0; i--){
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i _NeoNum ]
+[e $ >= _i -> 0 `i 398  ]
+[e $U 399  ]
+[e :U 398 ]
+{
+"64
+[; ;Patterns.c: 64:         setPixel(i, BT_RGB[0], BT_RGB[1], BT_RGB[2]);
+[e ( _setPixel (4 , , , _i *U + &U _BT_RGB * -> -> -> 0 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux *U + &U _BT_RGB * -> -> -> 1 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux *U + &U _BT_RGB * -> -> -> 2 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux ]
+"66
+[; ;Patterns.c: 66:         if(BT_Patron != 1|| BT_rainbow != 0)return;
+[e $ ! || != -> _BT_Patron `i -> 1 `i != -> _BT_rainbow `i -> 0 `i 401  ]
+[e $UE 389  ]
+[e :U 401 ]
+"67
+[; ;Patterns.c: 67:         Show();
+[e ( _Show ..  ]
+"68
+[; ;Patterns.c: 68:         Delay_ms(BT_Tiempo);
+[e ( _Delay_ms (1 -> _BT_Tiempo `i ]
+"69
+[; ;Patterns.c: 69:     }
+}
+[e -- _i -> 1 `i ]
+[e $ >= _i -> 0 `i 398  ]
+[e :U 399 ]
+}
+"70
+[; ;Patterns.c: 70:     for(int i=NeoNum; i >= 0; i--) {
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i _NeoNum ]
+[e $ >= _i -> 0 `i 402  ]
+[e $U 403  ]
+[e :U 402 ]
+{
+"72
+[; ;Patterns.c: 72:         setPixel(i, 0, 0, 0);
+[e ( _setPixel (4 , , , _i -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"73
+[; ;Patterns.c: 73:         if(BT_Patron != 1|| BT_rainbow != 0)return;
+[e $ ! || != -> _BT_Patron `i -> 1 `i != -> _BT_rainbow `i -> 0 `i 405  ]
+[e $UE 389  ]
+[e :U 405 ]
+"74
+[; ;Patterns.c: 74:         Show();
+[e ( _Show ..  ]
+"75
+[; ;Patterns.c: 75:         Delay_ms(BT_Tiempo);
+[e ( _Delay_ms (1 -> _BT_Tiempo `i ]
+"76
+[; ;Patterns.c: 76:     }
+}
+[e -- _i -> 1 `i ]
+[e $ >= _i -> 0 `i 402  ]
+[e :U 403 ]
+}
+"77
+[; ;Patterns.c: 77:     for (int i = 0; i < NeoNum; i++) {
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i _NeoNum 406  ]
+[e $U 407  ]
+[e :U 406 ]
+{
+"78
+[; ;Patterns.c: 78:         setPixel(i,BT_RGB[0], BT_RGB[1], BT_RGB[2]);
+[e ( _setPixel (4 , , , _i *U + &U _BT_RGB * -> -> -> 0 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux *U + &U _BT_RGB * -> -> -> 1 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux *U + &U _BT_RGB * -> -> -> 2 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux ]
+"79
+[; ;Patterns.c: 79:         setPixel(NeoNum-i,BT_RGB[0], BT_RGB[1], BT_RGB[2]);
+[e ( _setPixel (4 , , , - _NeoNum _i *U + &U _BT_RGB * -> -> -> 0 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux *U + &U _BT_RGB * -> -> -> 1 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux *U + &U _BT_RGB * -> -> -> 2 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux ]
+"80
+[; ;Patterns.c: 80:         if(BT_Patron != 1|| BT_rainbow != 0)return;
+[e $ ! || != -> _BT_Patron `i -> 1 `i != -> _BT_rainbow `i -> 0 `i 409  ]
+[e $UE 389  ]
+[e :U 409 ]
+"81
+[; ;Patterns.c: 81:         Show();
+[e ( _Show ..  ]
+"82
+[; ;Patterns.c: 82:         Delay_ms(BT_Tiempo);
+[e ( _Delay_ms (1 -> _BT_Tiempo `i ]
+"83
+[; ;Patterns.c: 83:     }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i _NeoNum 406  ]
+[e :U 407 ]
+}
+"84
+[; ;Patterns.c: 84:     for(int i = 0; i < NeoNum; i++){
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i _NeoNum 410  ]
+[e $U 411  ]
+[e :U 410 ]
+{
+"85
+[; ;Patterns.c: 85:         setPixel(i,0,0,0);
+[e ( _setPixel (4 , , , _i -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"86
+[; ;Patterns.c: 86:         setPixel(NeoNum-i,0,0,0);
+[e ( _setPixel (4 , , , - _NeoNum _i -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"87
+[; ;Patterns.c: 87:         if(BT_Patron != 1|| BT_rainbow != 0)return;
+[e $ ! || != -> _BT_Patron `i -> 1 `i != -> _BT_rainbow `i -> 0 `i 413  ]
+[e $UE 389  ]
+[e :U 413 ]
+"88
+[; ;Patterns.c: 88:         Show();
+[e ( _Show ..  ]
+"89
+[; ;Patterns.c: 89:         Delay_ms(BT_Tiempo);
+[e ( _Delay_ms (1 -> _BT_Tiempo `i ]
+"90
+[; ;Patterns.c: 90:     }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i _NeoNum 410  ]
+[e :U 411 ]
+}
+"91
+[; ;Patterns.c: 91:     for(int i = NeoNum/2; i >= 0; i--){
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i / _NeoNum -> 2 `i ]
+[e $ >= _i -> 0 `i 414  ]
+[e $U 415  ]
+[e :U 414 ]
+{
+"92
+[; ;Patterns.c: 92:         setPixel(NeoNum-i,BT_RGB[0], BT_RGB[1], BT_RGB[2]);
+[e ( _setPixel (4 , , , - _NeoNum _i *U + &U _BT_RGB * -> -> -> 0 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux *U + &U _BT_RGB * -> -> -> 1 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux *U + &U _BT_RGB * -> -> -> 2 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux ]
+"93
+[; ;Patterns.c: 93:         setPixel(i,BT_RGB[0], BT_RGB[1], BT_RGB[2]);
+[e ( _setPixel (4 , , , _i *U + &U _BT_RGB * -> -> -> 0 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux *U + &U _BT_RGB * -> -> -> 1 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux *U + &U _BT_RGB * -> -> -> 2 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux ]
+"94
+[; ;Patterns.c: 94:         if(BT_Patron != 1|| BT_rainbow != 0)return;
+[e $ ! || != -> _BT_Patron `i -> 1 `i != -> _BT_rainbow `i -> 0 `i 417  ]
+[e $UE 389  ]
+[e :U 417 ]
+"95
+[; ;Patterns.c: 95:         Show();
+[e ( _Show ..  ]
+"96
+[; ;Patterns.c: 96:         Delay_ms(BT_Tiempo);
+[e ( _Delay_ms (1 -> _BT_Tiempo `i ]
+"97
+[; ;Patterns.c: 97:     }
+}
+[e -- _i -> 1 `i ]
+[e $ >= _i -> 0 `i 414  ]
+[e :U 415 ]
+}
+"98
+[; ;Patterns.c: 98:     for(int i = NeoNum/2; i >= 0; i--){
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i / _NeoNum -> 2 `i ]
+[e $ >= _i -> 0 `i 418  ]
+[e $U 419  ]
+[e :U 418 ]
+{
+"99
+[; ;Patterns.c: 99:         setPixel(NeoNum-i,0,0,0);
+[e ( _setPixel (4 , , , - _NeoNum _i -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"100
+[; ;Patterns.c: 100:         setPixel(i,0,0,0);
+[e ( _setPixel (4 , , , _i -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"101
+[; ;Patterns.c: 101:         if(BT_Patron != 1|| BT_rainbow != 0)return;
+[e $ ! || != -> _BT_Patron `i -> 1 `i != -> _BT_rainbow `i -> 0 `i 421  ]
+[e $UE 389  ]
+[e :U 421 ]
+"102
+[; ;Patterns.c: 102:         Show();
+[e ( _Show ..  ]
+"103
+[; ;Patterns.c: 103:         Delay_ms(BT_Tiempo);
+[e ( _Delay_ms (1 -> _BT_Tiempo `i ]
+"104
+[; ;Patterns.c: 104:     }
+}
+[e -- _i -> 1 `i ]
+[e $ >= _i -> 0 `i 418  ]
+[e :U 419 ]
+}
+"105
+[; ;Patterns.c: 105: }
+[e :UE 389 ]
+}
+"106
+[; ;Patterns.c: 106: void colorWipeRainbow(void){
+[v _colorWipeRainbow `(v ~T0 @X0 1 ef ]
+{
+[e :U _colorWipeRainbow ]
+[f ]
+"107
+[; ;Patterns.c: 107:     unsigned char *c;
+[v _c `*uc ~T0 @X0 1 a ]
+"108
+[; ;Patterns.c: 108:     Time_Check(5);
+[e ( _Time_Check (1 -> 5 `i ]
+"110
+[; ;Patterns.c: 110:     for(unsigned char j=0; j<255;j++){
+{
+[v _j `uc ~T0 @X0 1 a ]
+[e = _j -> -> 0 `i `uc ]
+[e $ < -> _j `i -> 255 `i 423  ]
+[e $U 424  ]
+[e :U 423 ]
+{
+"111
+[; ;Patterns.c: 111:         for(unsigned char i=0;i<NeoNum;i++){
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i _NeoNum 426  ]
+[e $U 427  ]
+[e :U 426 ]
+{
+"112
+[; ;Patterns.c: 112:             c=Wheel((((i*256)/NeoNum)+j) & 255);
+[e = _c ( _Wheel (1 & + / * -> _i `i -> 256 `i _NeoNum -> _j `i -> 255 `i ]
+"113
+[; ;Patterns.c: 113:             setPixel(i, *c, *(c+1), *(c+2));
+[e ( _setPixel (4 , , , -> _i `i *U _c *U + _c * -> -> 1 `i `x -> -> # *U _c `i `x *U + _c * -> -> 2 `i `x -> -> # *U _c `i `x ]
+"114
+[; ;Patterns.c: 114:             if(BT_Patron != 1 || BT_rainbow != 1)return;
+[e $ ! || != -> _BT_Patron `i -> 1 `i != -> _BT_rainbow `i -> 1 `i 429  ]
+[e $UE 422  ]
+[e :U 429 ]
+"115
+[; ;Patterns.c: 115:             Show();
+[e ( _Show ..  ]
+"116
+[; ;Patterns.c: 116:             Delay_ms(BT_Tiempo);
+[e ( _Delay_ms (1 -> _BT_Tiempo `i ]
+"117
+[; ;Patterns.c: 117:         }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i _NeoNum 426  ]
+[e :U 427 ]
+}
+"128
+[; ;Patterns.c: 128:         for(int i=NeoNum; i>=0; i--) {
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i _NeoNum ]
+[e $ >= _i -> 0 `i 430  ]
+[e $U 431  ]
+[e :U 430 ]
+{
+"129
+[; ;Patterns.c: 129:             c=Wheel(((((NeoNum-i)*256)/NeoNum)+j) & 255);
+[e = _c ( _Wheel (1 & + / * - _NeoNum _i -> 256 `i _NeoNum -> _j `i -> 255 `i ]
+"130
+[; ;Patterns.c: 130:             setPixel(i, *c, *(c+1), *(c+2));
+[e ( _setPixel (4 , , , _i *U _c *U + _c * -> -> 1 `i `x -> -> # *U _c `i `x *U + _c * -> -> 2 `i `x -> -> # *U _c `i `x ]
+"131
+[; ;Patterns.c: 131:             if(BT_Patron != 1 || BT_rainbow != 1)return;
+[e $ ! || != -> _BT_Patron `i -> 1 `i != -> _BT_rainbow `i -> 1 `i 433  ]
+[e $UE 422  ]
+[e :U 433 ]
+"132
+[; ;Patterns.c: 132:             Show();
+[e ( _Show ..  ]
+"133
+[; ;Patterns.c: 133:             Delay_ms(BT_Tiempo);
+[e ( _Delay_ms (1 -> _BT_Tiempo `i ]
+"134
+[; ;Patterns.c: 134:         }
+}
+[e -- _i -> 1 `i ]
+[e $ >= _i -> 0 `i 430  ]
+[e :U 431 ]
+}
+"135
+[; ;Patterns.c: 135:         for(int i=NeoNum/2; i>=0; i--) {
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i / _NeoNum -> 2 `i ]
+[e $ >= _i -> 0 `i 434  ]
+[e $U 435  ]
+[e :U 434 ]
+{
+"136
+[; ;Patterns.c: 136:             setPixel(i,0,0,0);
+[e ( _setPixel (4 , , , _i -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"137
+[; ;Patterns.c: 137:             setPixel(NeoNum-i,0,0,0);
+[e ( _setPixel (4 , , , - _NeoNum _i -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"138
+[; ;Patterns.c: 138:             if(BT_Patron != 1 || BT_rainbow != 1)return;
+[e $ ! || != -> _BT_Patron `i -> 1 `i != -> _BT_rainbow `i -> 1 `i 437  ]
+[e $UE 422  ]
+[e :U 437 ]
+"139
+[; ;Patterns.c: 139:             Show();
+[e ( _Show ..  ]
+"140
+[; ;Patterns.c: 140:             Delay_ms(BT_Tiempo);
+[e ( _Delay_ms (1 -> _BT_Tiempo `i ]
+"141
+[; ;Patterns.c: 141:         }
+}
+[e -- _i -> 1 `i ]
+[e $ >= _i -> 0 `i 434  ]
+[e :U 435 ]
+}
+"142
+[; ;Patterns.c: 142:         for (int i = 0; i < NeoNum; i++){
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i _NeoNum 438  ]
+[e $U 439  ]
+[e :U 438 ]
+{
+"143
+[; ;Patterns.c: 143:             c=Wheel((((i*256)/NeoNum)+j) & 255);
+[e = _c ( _Wheel (1 & + / * _i -> 256 `i _NeoNum -> _j `i -> 255 `i ]
+"144
+[; ;Patterns.c: 144:             setPixel(i,*c, *(c+1), *(c+2));
+[e ( _setPixel (4 , , , _i *U _c *U + _c * -> -> 1 `i `x -> -> # *U _c `i `x *U + _c * -> -> 2 `i `x -> -> # *U _c `i `x ]
+"145
+[; ;Patterns.c: 145:             setPixel(NeoNum-i,*c, *(c+1), *(c+2));
+[e ( _setPixel (4 , , , - _NeoNum _i *U _c *U + _c * -> -> 1 `i `x -> -> # *U _c `i `x *U + _c * -> -> 2 `i `x -> -> # *U _c `i `x ]
+"146
+[; ;Patterns.c: 146:             if(BT_Patron != 1 || BT_rainbow != 1)return;
+[e $ ! || != -> _BT_Patron `i -> 1 `i != -> _BT_rainbow `i -> 1 `i 441  ]
+[e $UE 422  ]
+[e :U 441 ]
+"147
+[; ;Patterns.c: 147:             Show();
+[e ( _Show ..  ]
+"148
+[; ;Patterns.c: 148:             Delay_ms(BT_Tiempo);
+[e ( _Delay_ms (1 -> _BT_Tiempo `i ]
+"149
+[; ;Patterns.c: 149:         }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i _NeoNum 438  ]
+[e :U 439 ]
+}
+"150
+[; ;Patterns.c: 150:         for(int i = 0; i < NeoNum/2; i++){
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i / _NeoNum -> 2 `i 442  ]
+[e $U 443  ]
+[e :U 442 ]
+{
+"151
+[; ;Patterns.c: 151:             setPixel(i,0,0,0);
+[e ( _setPixel (4 , , , _i -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"152
+[; ;Patterns.c: 152:             setPixel(NeoNum-i,0,0,0);
+[e ( _setPixel (4 , , , - _NeoNum _i -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"153
+[; ;Patterns.c: 153:             if(BT_Patron != 1 || BT_rainbow != 1)return;
+[e $ ! || != -> _BT_Patron `i -> 1 `i != -> _BT_rainbow `i -> 1 `i 445  ]
+[e $UE 422  ]
+[e :U 445 ]
+"154
+[; ;Patterns.c: 154:             Show();
+[e ( _Show ..  ]
+"155
+[; ;Patterns.c: 155:             Delay_ms(BT_Tiempo);
+[e ( _Delay_ms (1 -> _BT_Tiempo `i ]
+"156
+[; ;Patterns.c: 156:         }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i / _NeoNum -> 2 `i 442  ]
+[e :U 443 ]
+}
+"157
+[; ;Patterns.c: 157:         for(int i = NeoNum/2; i >= 0; i--){
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i / _NeoNum -> 2 `i ]
+[e $ >= _i -> 0 `i 446  ]
+[e $U 447  ]
+[e :U 446 ]
+{
+"158
+[; ;Patterns.c: 158:             c=Wheel((((i*256)/NeoNum)+j) & 255);
+[e = _c ( _Wheel (1 & + / * _i -> 256 `i _NeoNum -> _j `i -> 255 `i ]
+"159
+[; ;Patterns.c: 159:             setPixel(i,*c, *(c+1), *(c+2));
+[e ( _setPixel (4 , , , _i *U _c *U + _c * -> -> 1 `i `x -> -> # *U _c `i `x *U + _c * -> -> 2 `i `x -> -> # *U _c `i `x ]
+"160
+[; ;Patterns.c: 160:             setPixel(NeoNum-i,*c, *(c+1), *(c+2));
+[e ( _setPixel (4 , , , - _NeoNum _i *U _c *U + _c * -> -> 1 `i `x -> -> # *U _c `i `x *U + _c * -> -> 2 `i `x -> -> # *U _c `i `x ]
+"161
+[; ;Patterns.c: 161:             if(BT_Patron != 1 || BT_rainbow != 1)return;
+[e $ ! || != -> _BT_Patron `i -> 1 `i != -> _BT_rainbow `i -> 1 `i 449  ]
+[e $UE 422  ]
+[e :U 449 ]
+"162
+[; ;Patterns.c: 162:             Show();
+[e ( _Show ..  ]
+"163
+[; ;Patterns.c: 163:             Delay_ms(BT_Tiempo);
+[e ( _Delay_ms (1 -> _BT_Tiempo `i ]
+"164
+[; ;Patterns.c: 164:         }
+}
+[e -- _i -> 1 `i ]
+[e $ >= _i -> 0 `i 446  ]
+[e :U 447 ]
+}
+"165
+[; ;Patterns.c: 165:         for(int i = NeoNum/2; i >= 0; i--){
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i / _NeoNum -> 2 `i ]
+[e $ >= _i -> 0 `i 450  ]
+[e $U 451  ]
+[e :U 450 ]
+{
+"166
+[; ;Patterns.c: 166:             setPixel(NeoNum-i,0,0,0);
+[e ( _setPixel (4 , , , - _NeoNum _i -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"167
+[; ;Patterns.c: 167:             setPixel(i,0,0,0);
+[e ( _setPixel (4 , , , _i -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"168
+[; ;Patterns.c: 168:             if(BT_Patron != 1 || BT_rainbow != 1)return;
+[e $ ! || != -> _BT_Patron `i -> 1 `i != -> _BT_rainbow `i -> 1 `i 453  ]
+[e $UE 422  ]
+[e :U 453 ]
+"169
+[; ;Patterns.c: 169:             Show();
+[e ( _Show ..  ]
+"170
+[; ;Patterns.c: 170:             Delay_ms(BT_Tiempo);
+[e ( _Delay_ms (1 -> _BT_Tiempo `i ]
+"171
+[; ;Patterns.c: 171:         }
+}
+[e -- _i -> 1 `i ]
+[e $ >= _i -> 0 `i 450  ]
+[e :U 451 ]
+}
+"172
+[; ;Patterns.c: 172:     }
+}
+[e ++ _j -> -> 1 `i `uc ]
+[e $ < -> _j `i -> 255 `i 423  ]
+[e :U 424 ]
+}
+"173
+[; ;Patterns.c: 173: }
+[e :UE 422 ]
+}
+"174
+[; ;Patterns.c: 174: void FadeInOut(){
+[v _FadeInOut `(v ~T0 @X0 1 ef ]
+{
+[e :U _FadeInOut ]
+[f ]
+"175
+[; ;Patterns.c: 175:     float r, g, b;
+[v _r `f ~T0 @X0 1 a ]
+[v _g `f ~T0 @X0 1 a ]
+[v _b `f ~T0 @X0 1 a ]
+"176
+[; ;Patterns.c: 176:     Time_Check(5);
+[e ( _Time_Check (1 -> 5 `i ]
+"177
+[; ;Patterns.c: 177:     for(int k = 0; k < 255; k=k+1) {
+{
+[v _k `i ~T0 @X0 1 a ]
+[e = _k -> 0 `i ]
+[e $ < _k -> 255 `i 455  ]
+[e $U 456  ]
+[e :U 455 ]
+{
+"178
+[; ;Patterns.c: 178:         r = (k/255.0)*BT_RGB[0];
+[e = _r -> * / -> _k `d .255.0 -> -> *U + &U _BT_RGB * -> -> -> 0 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux `i `d `f ]
+"179
+[; ;Patterns.c: 179:         g = (k/255.0)*BT_RGB[1];
+[e = _g -> * / -> _k `d .255.0 -> -> *U + &U _BT_RGB * -> -> -> 1 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux `i `d `f ]
+"180
+[; ;Patterns.c: 180:         b = (k/255.0)*BT_RGB[2];
+[e = _b -> * / -> _k `d .255.0 -> -> *U + &U _BT_RGB * -> -> -> 2 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux `i `d `f ]
+"181
+[; ;Patterns.c: 181:         setAll(r,g,b);
+[e ( _setAll (3 , , -> _r `uc -> _g `uc -> _b `uc ]
+"182
+[; ;Patterns.c: 182:         if( BT_Patron!= 2|| BT_rainbow != 0)return;
+[e $ ! || != -> _BT_Patron `i -> 2 `i != -> _BT_rainbow `i -> 0 `i 458  ]
+[e $UE 454  ]
+[e :U 458 ]
+"183
+[; ;Patterns.c: 183:         Show();
+[e ( _Show ..  ]
+"184
+[; ;Patterns.c: 184:         Delay_ms(BT_Tiempo);
+[e ( _Delay_ms (1 -> _BT_Tiempo `i ]
+"185
+[; ;Patterns.c: 185:   }
+}
+[e = _k + _k -> 1 `i ]
+[e $ < _k -> 255 `i 455  ]
+[e :U 456 ]
+}
+"186
+[; ;Patterns.c: 186:     for(int k = 255; k >0; k=k-2) {
+{
+[v _k `i ~T0 @X0 1 a ]
+[e = _k -> 255 `i ]
+[e $ > _k -> 0 `i 459  ]
+[e $U 460  ]
+[e :U 459 ]
+{
+"187
+[; ;Patterns.c: 187:         r = (k/255.0)*BT_RGB[0];
+[e = _r -> * / -> _k `d .255.0 -> -> *U + &U _BT_RGB * -> -> -> 0 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux `i `d `f ]
+"188
+[; ;Patterns.c: 188:         g = (k/255.0)*BT_RGB[1];
+[e = _g -> * / -> _k `d .255.0 -> -> *U + &U _BT_RGB * -> -> -> 1 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux `i `d `f ]
+"189
+[; ;Patterns.c: 189:         b = (k/255.0)*BT_RGB[2];
+[e = _b -> * / -> _k `d .255.0 -> -> *U + &U _BT_RGB * -> -> -> 2 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux `i `d `f ]
+"190
+[; ;Patterns.c: 190:         setAll(r,g,b);
+[e ( _setAll (3 , , -> _r `uc -> _g `uc -> _b `uc ]
+"191
+[; ;Patterns.c: 191:         if( BT_Patron!= 2|| BT_rainbow != 0)return;
+[e $ ! || != -> _BT_Patron `i -> 2 `i != -> _BT_rainbow `i -> 0 `i 462  ]
+[e $UE 454  ]
+[e :U 462 ]
+"192
+[; ;Patterns.c: 192:         Show();
+[e ( _Show ..  ]
+"193
+[; ;Patterns.c: 193:         Delay_ms(BT_Tiempo);
+[e ( _Delay_ms (1 -> _BT_Tiempo `i ]
+"194
+[; ;Patterns.c: 194:       }
+}
+[e = _k - _k -> 2 `i ]
+[e $ > _k -> 0 `i 459  ]
+[e :U 460 ]
+}
+"196
+[; ;Patterns.c: 196: }
+[e :UE 454 ]
+}
+"197
+[; ;Patterns.c: 197: void fadeInOutRainbow(void){
+[v _fadeInOutRainbow `(v ~T0 @X0 1 ef ]
+{
+[e :U _fadeInOutRainbow ]
+[f ]
+"198
+[; ;Patterns.c: 198:   unsigned char *c;
+[v _c `*uc ~T0 @X0 1 a ]
+"199
+[; ;Patterns.c: 199:   float r, g, b;
+[v _r `f ~T0 @X0 1 a ]
+[v _g `f ~T0 @X0 1 a ]
+[v _b `f ~T0 @X0 1 a ]
+"200
+[; ;Patterns.c: 200:     for(unsigned char j = 0; j < 255; j++) {
+{
+[v _j `uc ~T0 @X0 1 a ]
+[e = _j -> -> 0 `i `uc ]
+[e $ < -> _j `i -> 255 `i 464  ]
+[e $U 465  ]
+[e :U 464 ]
+{
+"201
+[; ;Patterns.c: 201:         for(unsigned char i=0;i<NeoNum;i++){
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i _NeoNum 467  ]
+[e $U 468  ]
+[e :U 467 ]
+{
+"202
+[; ;Patterns.c: 202:             c=Wheel((( i * 256 / NeoNum) + j) & 255);
+[e = _c ( _Wheel (1 & + / * -> _i `i -> 256 `i _NeoNum -> _j `i -> 255 `i ]
+"203
+[; ;Patterns.c: 203:             r = (j/255.0) * (*c);
+[e = _r -> * / -> -> _j `i `d .255.0 -> -> *U _c `i `d `f ]
+"204
+[; ;Patterns.c: 204:             g = (j/255.0) * (*(c+1));
+[e = _g -> * / -> -> _j `i `d .255.0 -> -> *U + _c * -> -> 1 `i `x -> -> # *U _c `i `x `i `d `f ]
+"205
+[; ;Patterns.c: 205:             b = (j/255.0) * (*(c+2));
+[e = _b -> * / -> -> _j `i `d .255.0 -> -> *U + _c * -> -> 2 `i `x -> -> # *U _c `i `x `i `d `f ]
+"206
+[; ;Patterns.c: 206:             setPixel(i,r,g,b);
+[e ( _setPixel (4 , , , -> _i `i -> _r `uc -> _g `uc -> _b `uc ]
+"207
+[; ;Patterns.c: 207:         }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i _NeoNum 467  ]
+[e :U 468 ]
+}
+"208
+[; ;Patterns.c: 208:         Show();
+[e ( _Show ..  ]
+"209
+[; ;Patterns.c: 209:         if(BT_Patron!= 2 || BT_rainbow != 1)return;
+[e $ ! || != -> _BT_Patron `i -> 2 `i != -> _BT_rainbow `i -> 1 `i 470  ]
+[e $UE 463  ]
+[e :U 470 ]
+"210
+[; ;Patterns.c: 210:         Delay_ms(BT_Tiempo);
+[e ( _Delay_ms (1 -> _BT_Tiempo `i ]
+"211
+[; ;Patterns.c: 211:       }
+}
+[e ++ _j -> -> 1 `i `uc ]
+[e $ < -> _j `i -> 255 `i 464  ]
+[e :U 465 ]
+}
+"212
+[; ;Patterns.c: 212:     for(unsigned char j = 255; j > 0; j--) {
+{
+[v _j `uc ~T0 @X0 1 a ]
+[e = _j -> -> 255 `i `uc ]
+[e $ > -> _j `i -> 0 `i 471  ]
+[e $U 472  ]
+[e :U 471 ]
+{
+"213
+[; ;Patterns.c: 213:         for(unsigned char i=0;i<NeoNum;i++){
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i _NeoNum 474  ]
+[e $U 475  ]
+[e :U 474 ]
+{
+"214
+[; ;Patterns.c: 214:               c=Wheel(((i * 256 / NeoNum) + j) & 255);
+[e = _c ( _Wheel (1 & + / * -> _i `i -> 256 `i _NeoNum -> _j `i -> 255 `i ]
+"215
+[; ;Patterns.c: 215:               r = (j/255.0) * (*c);
+[e = _r -> * / -> -> _j `i `d .255.0 -> -> *U _c `i `d `f ]
+"216
+[; ;Patterns.c: 216:               g = (j/255.0) * (*(c+1));
+[e = _g -> * / -> -> _j `i `d .255.0 -> -> *U + _c * -> -> 1 `i `x -> -> # *U _c `i `x `i `d `f ]
+"217
+[; ;Patterns.c: 217:               b = (j/255.0) * (*(c+2));
+[e = _b -> * / -> -> _j `i `d .255.0 -> -> *U + _c * -> -> 2 `i `x -> -> # *U _c `i `x `i `d `f ]
+"218
+[; ;Patterns.c: 218:               setPixel(i,r,g,b);
+[e ( _setPixel (4 , , , -> _i `i -> _r `uc -> _g `uc -> _b `uc ]
+"219
+[; ;Patterns.c: 219:           }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i _NeoNum 474  ]
+[e :U 475 ]
+}
+"220
+[; ;Patterns.c: 220:         Show();
+[e ( _Show ..  ]
+"221
+[; ;Patterns.c: 221:         if( BT_Patron!= 2 || BT_rainbow != 1)return;
+[e $ ! || != -> _BT_Patron `i -> 2 `i != -> _BT_rainbow `i -> 1 `i 477  ]
+[e $UE 463  ]
+[e :U 477 ]
+"222
+[; ;Patterns.c: 222:         Delay_ms(BT_Tiempo);
+[e ( _Delay_ms (1 -> _BT_Tiempo `i ]
+"223
+[; ;Patterns.c: 223:     }
+}
+[e -- _j -> -> 1 `i `uc ]
+[e $ > -> _j `i -> 0 `i 471  ]
+[e :U 472 ]
+}
+"224
+[; ;Patterns.c: 224: }
+[e :UE 463 ]
+}
+"225
+[; ;Patterns.c: 225: void theaterChase() {
+[v _theaterChase `(v ~T0 @X0 1 ef ]
+{
+[e :U _theaterChase ]
+[f ]
+"226
+[; ;Patterns.c: 226:     Time_Check(5);
+[e ( _Time_Check (1 -> 5 `i ]
+"227
+[; ;Patterns.c: 227:     for (unsigned char q=0; q < 5; q++) {
+{
+[v _q `uc ~T0 @X0 1 a ]
+[e = _q -> -> 0 `i `uc ]
+[e $ < -> _q `i -> 5 `i 479  ]
+[e $U 480  ]
+[e :U 479 ]
+{
+"228
+[; ;Patterns.c: 228:         for (int i=NeoNum/2; i>=0; i=i-5) {
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i / _NeoNum -> 2 `i ]
+[e $ >= _i -> 0 `i 482  ]
+[e $U 483  ]
+[e :U 482 ]
+{
+"229
+[; ;Patterns.c: 229:             setPixel(i+q, BT_RGB[0], BT_RGB[1], BT_RGB[2]);
+[e ( _setPixel (4 , , , + _i -> _q `i *U + &U _BT_RGB * -> -> -> 0 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux *U + &U _BT_RGB * -> -> -> 1 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux *U + &U _BT_RGB * -> -> -> 2 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux ]
+"230
+[; ;Patterns.c: 230:             setPixel((NeoNum-(i+1))-q, BT_RGB[0], BT_RGB[1], BT_RGB[2]);
+[e ( _setPixel (4 , , , - - _NeoNum + _i -> 1 `i -> _q `i *U + &U _BT_RGB * -> -> -> 0 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux *U + &U _BT_RGB * -> -> -> 1 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux *U + &U _BT_RGB * -> -> -> 2 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux ]
+"231
+[; ;Patterns.c: 231:         }
+}
+[e = _i - _i -> 5 `i ]
+[e $ >= _i -> 0 `i 482  ]
+[e :U 483 ]
+}
+"232
+[; ;Patterns.c: 232:         if(BT_Patron != 3|| BT_rainbow != 0)return;
+[e $ ! || != -> _BT_Patron `i -> 3 `i != -> _BT_rainbow `i -> 0 `i 485  ]
+[e $UE 478  ]
+[e :U 485 ]
+"233
+[; ;Patterns.c: 233:         setPixel(NeoNum/2, BT_RGB[0], BT_RGB[1], BT_RGB[2]);
+[e ( _setPixel (4 , , , / _NeoNum -> 2 `i *U + &U _BT_RGB * -> -> -> 0 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux *U + &U _BT_RGB * -> -> -> 1 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux *U + &U _BT_RGB * -> -> -> 2 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux ]
+"234
+[; ;Patterns.c: 234:         Show();
+[e ( _Show ..  ]
+"235
+[; ;Patterns.c: 235:         Delay_ms(BT_Tiempo);
+[e ( _Delay_ms (1 -> _BT_Tiempo `i ]
+"236
+[; ;Patterns.c: 236:         for (int i=NeoNum/2; i>=0; i=i-5) {
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i / _NeoNum -> 2 `i ]
+[e $ >= _i -> 0 `i 486  ]
+[e $U 487  ]
+[e :U 486 ]
+{
+"237
+[; ;Patterns.c: 237:             setPixel(i+q, 0,0,0);
+[e ( _setPixel (4 , , , + _i -> _q `i -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"238
+[; ;Patterns.c: 238:             setPixel((NeoNum-(i+1))-q, 0,0,0);
+[e ( _setPixel (4 , , , - - _NeoNum + _i -> 1 `i -> _q `i -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"239
+[; ;Patterns.c: 239:         }
+}
+[e = _i - _i -> 5 `i ]
+[e $ >= _i -> 0 `i 486  ]
+[e :U 487 ]
+}
+"240
+[; ;Patterns.c: 240:     }
+}
+[e ++ _q -> -> 1 `i `uc ]
+[e $ < -> _q `i -> 5 `i 479  ]
+[e :U 480 ]
+}
+"241
+[; ;Patterns.c: 241: }
+[e :UE 478 ]
+}
+"242
+[; ;Patterns.c: 242: void theaterChaseRainbow() {
+[v _theaterChaseRainbow `(v ~T0 @X0 1 ef ]
+{
+[e :U _theaterChaseRainbow ]
+[f ]
+"243
+[; ;Patterns.c: 243:     unsigned char *c;
+[v _c `*uc ~T0 @X0 1 a ]
+"244
+[; ;Patterns.c: 244:     Time_Check(5);
+[e ( _Time_Check (1 -> 5 `i ]
+"245
+[; ;Patterns.c: 245:     for (unsigned char j=0; j < 255; j++) {
+{
+[v _j `uc ~T0 @X0 1 a ]
+[e = _j -> -> 0 `i `uc ]
+[e $ < -> _j `i -> 255 `i 490  ]
+[e $U 491  ]
+[e :U 490 ]
+{
+"246
+[; ;Patterns.c: 246:       for (unsigned char q=0; q < 5; q++) {
+{
+[v _q `uc ~T0 @X0 1 a ]
+[e = _q -> -> 0 `i `uc ]
+[e $ < -> _q `i -> 5 `i 493  ]
+[e $U 494  ]
+[e :U 493 ]
+{
+"247
+[; ;Patterns.c: 247:           for (int i=NeoNum/2; i>=0; i=i-5) {
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i / _NeoNum -> 2 `i ]
+[e $ >= _i -> 0 `i 496  ]
+[e $U 497  ]
+[e :U 496 ]
+{
+"248
+[; ;Patterns.c: 248:             c = Wheel( (i+j) % 255);
+[e = _c ( _Wheel (1 % + _i -> _j `i -> 255 `i ]
+"249
+[; ;Patterns.c: 249:             setPixel(i+q, *c, *(c+1), *(c+2));
+[e ( _setPixel (4 , , , + _i -> _q `i *U _c *U + _c * -> -> 1 `i `x -> -> # *U _c `i `x *U + _c * -> -> 2 `i `x -> -> # *U _c `i `x ]
+"250
+[; ;Patterns.c: 250:             setPixel((NeoNum-(i+1))-q, *c, *(c+1), *(c+2));
+[e ( _setPixel (4 , , , - - _NeoNum + _i -> 1 `i -> _q `i *U _c *U + _c * -> -> 1 `i `x -> -> # *U _c `i `x *U + _c * -> -> 2 `i `x -> -> # *U _c `i `x ]
+"251
+[; ;Patterns.c: 251:           }
+}
+[e = _i - _i -> 5 `i ]
+[e $ >= _i -> 0 `i 496  ]
+[e :U 497 ]
+}
+"252
+[; ;Patterns.c: 252:           if(BT_Patron != 3 || BT_rainbow != 1)return;
+[e $ ! || != -> _BT_Patron `i -> 3 `i != -> _BT_rainbow `i -> 1 `i 499  ]
+[e $UE 489  ]
+[e :U 499 ]
+"253
+[; ;Patterns.c: 253:           setPixel(NeoNum/2, *c, *(c+1), *(c+2));
+[e ( _setPixel (4 , , , / _NeoNum -> 2 `i *U _c *U + _c * -> -> 1 `i `x -> -> # *U _c `i `x *U + _c * -> -> 2 `i `x -> -> # *U _c `i `x ]
+"254
+[; ;Patterns.c: 254:           Show();
+[e ( _Show ..  ]
+"255
+[; ;Patterns.c: 255:           Delay_ms(BT_Tiempo);
+[e ( _Delay_ms (1 -> _BT_Tiempo `i ]
+"256
+[; ;Patterns.c: 256:           for (int i=NeoNum/2; i>=0; i=i-5) {
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i / _NeoNum -> 2 `i ]
+[e $ >= _i -> 0 `i 500  ]
+[e $U 501  ]
+[e :U 500 ]
+{
+"257
+[; ;Patterns.c: 257:             setPixel(i+q, 0,0,0);
+[e ( _setPixel (4 , , , + _i -> _q `i -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"258
+[; ;Patterns.c: 258:             setPixel((NeoNum-(i+1))-q,0,0,0);
+[e ( _setPixel (4 , , , - - _NeoNum + _i -> 1 `i -> _q `i -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"259
+[; ;Patterns.c: 259:           }
+}
+[e = _i - _i -> 5 `i ]
+[e $ >= _i -> 0 `i 500  ]
+[e :U 501 ]
+}
+"260
+[; ;Patterns.c: 260:           if(BT_Patron != 3 || BT_rainbow != 1)return;
+[e $ ! || != -> _BT_Patron `i -> 3 `i != -> _BT_rainbow `i -> 1 `i 503  ]
+[e $UE 489  ]
+[e :U 503 ]
+"261
+[; ;Patterns.c: 261:       }
+}
+[e ++ _q -> -> 1 `i `uc ]
+[e $ < -> _q `i -> 5 `i 493  ]
+[e :U 494 ]
+}
+"262
+[; ;Patterns.c: 262:     }
+}
+[e ++ _j -> -> 1 `i `uc ]
+[e $ < -> _j `i -> 255 `i 490  ]
+[e :U 491 ]
+}
+"263
+[; ;Patterns.c: 263: }
+[e :UE 489 ]
+}
+"264
+[; ;Patterns.c: 264: void CylonBounce(int EyeSize){
+[v _CylonBounce `(v ~T0 @X0 1 ef1`i ]
+{
+[e :U _CylonBounce ]
+[v _EyeSize `i ~T0 @X0 1 r1 ]
+[f ]
+"265
+[; ;Patterns.c: 265:     Time_Check(5);
+[e ( _Time_Check (1 -> 5 `i ]
+"266
+[; ;Patterns.c: 266:     for(unsigned char i = 0; i < NeoNum-EyeSize-2; i++) {
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $U 508  ]
+[e :U 505 ]
+{
+"267
+[; ;Patterns.c: 267:       setAll(0,0,0);
+[e ( _setAll (3 , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"269
+[; ;Patterns.c: 269:       for(unsigned char j = 1; j <= EyeSize; j++) {
+{
+[v _j `uc ~T0 @X0 1 a ]
+[e = _j -> -> 1 `i `uc ]
+[e $U 512  ]
+[e :U 509 ]
+{
+"270
+[; ;Patterns.c: 270:         setPixel(i+j, BT_RGB[0], BT_RGB[1], BT_RGB[2]);
+[e ( _setPixel (4 , , , + -> _i `i -> _j `i *U + &U _BT_RGB * -> -> -> 0 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux *U + &U _BT_RGB * -> -> -> 1 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux *U + &U _BT_RGB * -> -> -> 2 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux ]
+"271
+[; ;Patterns.c: 271:       }
+}
+[e ++ _j -> -> 1 `i `uc ]
+[e :U 512 ]
+[e $ <= -> _j `i _EyeSize 509  ]
+[e :U 510 ]
+}
+"273
+[; ;Patterns.c: 273:       if(BT_Patron != 4|| BT_rainbow != 0)return;
+[e $ ! || != -> _BT_Patron `i -> 4 `i != -> _BT_rainbow `i -> 0 `i 513  ]
+[e $UE 504  ]
+[e :U 513 ]
+"274
+[; ;Patterns.c: 274:       Show();
+[e ( _Show ..  ]
+"275
+[; ;Patterns.c: 275:       Delay_ms(BT_Tiempo);
+[e ( _Delay_ms (1 -> _BT_Tiempo `i ]
+"276
+[; ;Patterns.c: 276:     }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e :U 508 ]
+[e $ < -> _i `i - - _NeoNum _EyeSize -> 2 `i 505  ]
+[e :U 506 ]
+}
+"277
+[; ;Patterns.c: 277:     for(unsigned char i = NeoNum-EyeSize-2; i > 0; i--) {
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> - - _NeoNum _EyeSize -> 2 `i `uc ]
+[e $ > -> _i `i -> 0 `i 514  ]
+[e $U 515  ]
+[e :U 514 ]
+{
+"278
+[; ;Patterns.c: 278:       setAll(0,0,0);
+[e ( _setAll (3 , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"280
+[; ;Patterns.c: 280:       for(unsigned char j = 1; j <= EyeSize; j++) {
+{
+[v _j `uc ~T0 @X0 1 a ]
+[e = _j -> -> 1 `i `uc ]
+[e $U 520  ]
+[e :U 517 ]
+{
+"281
+[; ;Patterns.c: 281:         setPixel(i+j, BT_RGB[0], BT_RGB[1], BT_RGB[2]);
+[e ( _setPixel (4 , , , + -> _i `i -> _j `i *U + &U _BT_RGB * -> -> -> 0 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux *U + &U _BT_RGB * -> -> -> 1 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux *U + &U _BT_RGB * -> -> -> 2 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux ]
+"282
+[; ;Patterns.c: 282:       }
+}
+[e ++ _j -> -> 1 `i `uc ]
+[e :U 520 ]
+[e $ <= -> _j `i _EyeSize 517  ]
+[e :U 518 ]
+}
+"284
+[; ;Patterns.c: 284:       if(BT_Patron != 4|| BT_rainbow != 0)return;
+[e $ ! || != -> _BT_Patron `i -> 4 `i != -> _BT_rainbow `i -> 0 `i 521  ]
+[e $UE 504  ]
+[e :U 521 ]
+"285
+[; ;Patterns.c: 285:       Show();
+[e ( _Show ..  ]
+"286
+[; ;Patterns.c: 286:       Delay_ms(BT_Tiempo);
+[e ( _Delay_ms (1 -> _BT_Tiempo `i ]
+"287
+[; ;Patterns.c: 287:     }
+}
+[e -- _i -> -> 1 `i `uc ]
+[e $ > -> _i `i -> 0 `i 514  ]
+[e :U 515 ]
+}
+"288
+[; ;Patterns.c: 288: }
+[e :UE 504 ]
+}
+"289
+[; ;Patterns.c: 289: void CycloneBounceRainbow(int EyeSize){
+[v _CycloneBounceRainbow `(v ~T0 @X0 1 ef1`i ]
+{
+[e :U _CycloneBounceRainbow ]
+[v _EyeSize `i ~T0 @X0 1 r1 ]
+[f ]
+"290
+[; ;Patterns.c: 290:     unsigned char *c;
+[v _c `*uc ~T0 @X0 1 a ]
+"292
+[; ;Patterns.c: 292:     Time_Check(5);
+[e ( _Time_Check (1 -> 5 `i ]
+"293
+[; ;Patterns.c: 293:     for(int j=0; j<256;j++){
+{
+[v _j `i ~T0 @X0 1 a ]
+[e = _j -> 0 `i ]
+[e $ < _j -> 256 `i 523  ]
+[e $U 524  ]
+[e :U 523 ]
+{
+"294
+[; ;Patterns.c: 294:         for(unsigned char i = 0; i < NeoNum-EyeSize-2; i++) {
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $U 529  ]
+[e :U 526 ]
+{
+"295
+[; ;Patterns.c: 295:             c=Wheel(((i * 256 / NeoNum) + j) & 255);
+[e = _c ( _Wheel (1 & + / * -> _i `i -> 256 `i _NeoNum _j -> 255 `i ]
+"296
+[; ;Patterns.c: 296:             setPixel(i, *c/20, *(c+1)/20, *(c+2)/20);
+[e ( _setPixel (4 , , , -> _i `i -> / -> *U _c `i -> 20 `i `uc -> / -> *U + _c * -> -> 1 `i `x -> -> # *U _c `i `x `i -> 20 `i `uc -> / -> *U + _c * -> -> 2 `i `x -> -> # *U _c `i `x `i -> 20 `i `uc ]
+"297
+[; ;Patterns.c: 297:             for(unsigned char j = 1; j <= EyeSize; j++){
+{
+[v _j `uc ~T0 @X0 1 a ]
+[e = _j -> -> 1 `i `uc ]
+[e $U 533  ]
+[e :U 530 ]
+{
+"298
+[; ;Patterns.c: 298:                 setPixel(i+j, *c, *(c+1), *(c+2));
+[e ( _setPixel (4 , , , + -> _i `i -> _j `i *U _c *U + _c * -> -> 1 `i `x -> -> # *U _c `i `x *U + _c * -> -> 2 `i `x -> -> # *U _c `i `x ]
+"299
+[; ;Patterns.c: 299:             }
+}
+[e ++ _j -> -> 1 `i `uc ]
+[e :U 533 ]
+[e $ <= -> _j `i _EyeSize 530  ]
+[e :U 531 ]
+}
+"300
+[; ;Patterns.c: 300:             setPixel(i+EyeSize+1, *c/20, *(c+1)/20, *(c+2)/20);
+[e ( _setPixel (4 , , , + + -> _i `i _EyeSize -> 1 `i -> / -> *U _c `i -> 20 `i `uc -> / -> *U + _c * -> -> 1 `i `x -> -> # *U _c `i `x `i -> 20 `i `uc -> / -> *U + _c * -> -> 2 `i `x -> -> # *U _c `i `x `i -> 20 `i `uc ]
+"301
+[; ;Patterns.c: 301:             if( BT_Patron!= 4 || BT_rainbow != 1)return;
+[e $ ! || != -> _BT_Patron `i -> 4 `i != -> _BT_rainbow `i -> 1 `i 534  ]
+[e $UE 522  ]
+[e :U 534 ]
+"302
+[; ;Patterns.c: 302:             Show();
+[e ( _Show ..  ]
+"303
+[; ;Patterns.c: 303:             Delay_ms(BT_Tiempo);
+[e ( _Delay_ms (1 -> _BT_Tiempo `i ]
+"304
+[; ;Patterns.c: 304:             }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e :U 529 ]
+[e $ < -> _i `i - - _NeoNum _EyeSize -> 2 `i 526  ]
+[e :U 527 ]
+}
+"305
+[; ;Patterns.c: 305:             setAll(0,0,0);
+[e ( _setAll (3 , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"306
+[; ;Patterns.c: 306:         for(unsigned char i = NeoNum-EyeSize-2; i > 0; i--) {
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> - - _NeoNum _EyeSize -> 2 `i `uc ]
+[e $ > -> _i `i -> 0 `i 535  ]
+[e $U 536  ]
+[e :U 535 ]
+{
+"307
+[; ;Patterns.c: 307:             c=Wheel(((i * 256 / NeoNum) + j) & 255);
+[e = _c ( _Wheel (1 & + / * -> _i `i -> 256 `i _NeoNum _j -> 255 `i ]
+"308
+[; ;Patterns.c: 308:             setPixel(i, *c/20, *(c+1)/20, *(c+2)/20);
+[e ( _setPixel (4 , , , -> _i `i -> / -> *U _c `i -> 20 `i `uc -> / -> *U + _c * -> -> 1 `i `x -> -> # *U _c `i `x `i -> 20 `i `uc -> / -> *U + _c * -> -> 2 `i `x -> -> # *U _c `i `x `i -> 20 `i `uc ]
+"309
+[; ;Patterns.c: 309:             for(unsigned char j = 1; j <= EyeSize; j++){
+{
+[v _j `uc ~T0 @X0 1 a ]
+[e = _j -> -> 1 `i `uc ]
+[e $U 541  ]
+[e :U 538 ]
+{
+"310
+[; ;Patterns.c: 310:                 setPixel(i+j, *c, *(c+1), *(c+2));
+[e ( _setPixel (4 , , , + -> _i `i -> _j `i *U _c *U + _c * -> -> 1 `i `x -> -> # *U _c `i `x *U + _c * -> -> 2 `i `x -> -> # *U _c `i `x ]
+"311
+[; ;Patterns.c: 311:             }
+}
+[e ++ _j -> -> 1 `i `uc ]
+[e :U 541 ]
+[e $ <= -> _j `i _EyeSize 538  ]
+[e :U 539 ]
+}
+"312
+[; ;Patterns.c: 312:             setPixel(i+EyeSize+1, *c/20, *(c+1)/20, *(c+2)/20);
+[e ( _setPixel (4 , , , + + -> _i `i _EyeSize -> 1 `i -> / -> *U _c `i -> 20 `i `uc -> / -> *U + _c * -> -> 1 `i `x -> -> # *U _c `i `x `i -> 20 `i `uc -> / -> *U + _c * -> -> 2 `i `x -> -> # *U _c `i `x `i -> 20 `i `uc ]
+"313
+[; ;Patterns.c: 313:             if( BT_Patron!= 4 || BT_rainbow != 1)return;
+[e $ ! || != -> _BT_Patron `i -> 4 `i != -> _BT_rainbow `i -> 1 `i 542  ]
+[e $UE 522  ]
+[e :U 542 ]
+"314
+[; ;Patterns.c: 314:             Show();
+[e ( _Show ..  ]
+"315
+[; ;Patterns.c: 315:             Delay_ms(BT_Tiempo);
+[e ( _Delay_ms (1 -> _BT_Tiempo `i ]
+"316
+[; ;Patterns.c: 316:         }
+}
+[e -- _i -> -> 1 `i `uc ]
+[e $ > -> _i `i -> 0 `i 535  ]
+[e :U 536 ]
+}
+"317
+[; ;Patterns.c: 317:     }
+}
+[e ++ _j -> 1 `i ]
+[e $ < _j -> 256 `i 523  ]
+[e :U 524 ]
+}
+"318
+[; ;Patterns.c: 318: }
+[e :UE 522 ]
+}
+"319
+[; ;Patterns.c: 319: void rainbowCycle(void) {
+[v _rainbowCycle `(v ~T0 @X0 1 ef ]
+{
+[e :U _rainbowCycle ]
+[f ]
+"320
+[; ;Patterns.c: 320:     unsigned char *c;
+[v _c `*uc ~T0 @X0 1 a ]
+"321
+[; ;Patterns.c: 321:     Time_Check(5);
+[e ( _Time_Check (1 -> 5 `i ]
+"332
+[; ;Patterns.c: 332:     for(int j=0; j<255; j++) {
+{
+[v _j `i ~T0 @X0 1 a ]
+[e = _j -> 0 `i ]
+[e $ < _j -> 255 `i 544  ]
+[e $U 545  ]
+[e :U 544 ]
+{
+"333
+[; ;Patterns.c: 333:         for(int i=0; i < NeoNum; i++) {
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i _NeoNum 547  ]
+[e $U 548  ]
+[e :U 547 ]
+{
+"334
+[; ;Patterns.c: 334:           c=Wheel(((i * 255 / NeoNum) + j) & 255);
+[e = _c ( _Wheel (1 & + / * _i -> 255 `i _NeoNum _j -> 255 `i ]
+"335
+[; ;Patterns.c: 335:           setPixel(NeoNum-i, *c, *(c+1), *(c+2));
+[e ( _setPixel (4 , , , - _NeoNum _i *U _c *U + _c * -> -> 1 `i `x -> -> # *U _c `i `x *U + _c * -> -> 2 `i `x -> -> # *U _c `i `x ]
+"336
+[; ;Patterns.c: 336:           setPixel(i, *c, *(c+1), *(c+2));
+[e ( _setPixel (4 , , , _i *U _c *U + _c * -> -> 1 `i `x -> -> # *U _c `i `x *U + _c * -> -> 2 `i `x -> -> # *U _c `i `x ]
+"337
+[; ;Patterns.c: 337:         }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i _NeoNum 547  ]
+[e :U 548 ]
+}
+"338
+[; ;Patterns.c: 338:     if( BT_Patron!= 5 || BT_rainbow != 1)return;
+[e $ ! || != -> _BT_Patron `i -> 5 `i != -> _BT_rainbow `i -> 1 `i 550  ]
+[e $UE 543  ]
+[e :U 550 ]
+"339
+[; ;Patterns.c: 339:     Show();
+[e ( _Show ..  ]
+"340
+[; ;Patterns.c: 340:     Delay_ms(BT_Tiempo);
+[e ( _Delay_ms (1 -> _BT_Tiempo `i ]
+"341
+[; ;Patterns.c: 341:   }
+}
+[e ++ _j -> 1 `i ]
+[e $ < _j -> 255 `i 544  ]
+[e :U 545 ]
+}
+"342
+[; ;Patterns.c: 342: }
+[e :UE 543 ]
+}
+"343
+[; ;Patterns.c: 343: void SetAllColor(void){
+[v _SetAllColor `(v ~T0 @X0 1 ef ]
+{
+[e :U _SetAllColor ]
+[f ]
+"344
+[; ;Patterns.c: 344:     int flag = 5, counter = 0;
+[v _flag `i ~T0 @X0 1 a ]
+[e = _flag -> 5 `i ]
+[v _counter `i ~T0 @X0 1 a ]
+[e = _counter -> 0 `i ]
+"345
+[; ;Patterns.c: 345:     unsigned char *newBT;
+[v _newBT `*uc ~T0 @X0 1 a ]
+"347
+[; ;Patterns.c: 347:     Time_Check(10);
+[e ( _Time_Check (1 -> 10 `i ]
+"348
+[; ;Patterns.c: 348:     for(int i= 0; i < 2500; ++i){
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i -> 2500 `i 552  ]
+[e $U 553  ]
+[e :U 552 ]
+{
+"349
+[; ;Patterns.c: 349:         setAll(BT_RGB[0], BT_RGB[1], BT_RGB[2]);
+[e ( _setAll (3 , , *U + &U _BT_RGB * -> -> -> 0 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux *U + &U _BT_RGB * -> -> -> 1 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux *U + &U _BT_RGB * -> -> -> 2 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux ]
+"350
+[; ;Patterns.c: 350:         Delay_ms(20);
+[e ( _Delay_ms (1 -> 20 `i ]
+"351
+[; ;Patterns.c: 351:         if(BT_Patron != 5|| BT_rainbow != 0)return;
+[e $ ! || != -> _BT_Patron `i -> 5 `i != -> _BT_rainbow `i -> 0 `i 555  ]
+[e $UE 551  ]
+[e :U 555 ]
+"352
+[; ;Patterns.c: 352:     }
+}
+[e =+ _i -> 1 `i ]
+[e $ < _i -> 2500 `i 552  ]
+[e :U 553 ]
+}
+"353
+[; ;Patterns.c: 353:     for(int i = 0; i < NeoNum; ++i){
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i _NeoNum 556  ]
+[e $U 557  ]
+[e :U 556 ]
+{
+"354
+[; ;Patterns.c: 354:         if(i < flag){
+[e $ ! < _i _flag 559  ]
+{
+"355
+[; ;Patterns.c: 355:             newBT = staticWheel();
+[e = _newBT ( _staticWheel ..  ]
+"356
+[; ;Patterns.c: 356:             setPixel(i,*newBT, *(newBT+1), *(newBT+2));
+[e ( _setPixel (4 , , , _i *U _newBT *U + _newBT * -> -> 1 `i `x -> -> # *U _newBT `i `x *U + _newBT * -> -> 2 `i `x -> -> # *U _newBT `i `x ]
+"357
+[; ;Patterns.c: 357:         }else{
+}
+[e $U 560  ]
+[e :U 559 ]
+{
+"358
+[; ;Patterns.c: 358:             setPixel(i,BT_RGB[0], BT_RGB[1], BT_RGB[2]);
+[e ( _setPixel (4 , , , _i *U + &U _BT_RGB * -> -> -> 0 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux *U + &U _BT_RGB * -> -> -> 1 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux *U + &U _BT_RGB * -> -> -> 2 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux ]
+"359
+[; ;Patterns.c: 359:         }
+}
+[e :U 560 ]
+"360
+[; ;Patterns.c: 360:         Show();
+[e ( _Show ..  ]
+"361
+[; ;Patterns.c: 361:         if(BT_Patron != 5|| BT_rainbow != 0)return;
+[e $ ! || != -> _BT_Patron `i -> 5 `i != -> _BT_rainbow `i -> 0 `i 561  ]
+[e $UE 551  ]
+[e :U 561 ]
+"362
+[; ;Patterns.c: 362:         Delay_ms(BT_Tiempo);
+[e ( _Delay_ms (1 -> _BT_Tiempo `i ]
+"363
+[; ;Patterns.c: 363:         counter++;
+[e ++ _counter -> 1 `i ]
+"364
+[; ;Patterns.c: 364:         if(counter == flag+5) flag += 10;
+[e $ ! == _counter + _flag -> 5 `i 562  ]
+[e =+ _flag -> 10 `i ]
+[e :U 562 ]
+"365
+[; ;Patterns.c: 365:     }
+}
+[e =+ _i -> 1 `i ]
+[e $ < _i _NeoNum 556  ]
+[e :U 557 ]
+}
+"374
+[; ;Patterns.c: 374:     flag = 5;
+[e = _flag -> 5 `i ]
+"375
+[; ;Patterns.c: 375:     counter = 0;
+[e = _counter -> 0 `i ]
+"376
+[; ;Patterns.c: 376:     for(int i = 0; i < NeoNum; ++i){
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i _NeoNum 563  ]
+[e $U 564  ]
+[e :U 563 ]
+{
+"377
+[; ;Patterns.c: 377:         if(i < flag){
+[e $ ! < _i _flag 566  ]
+{
+"378
+[; ;Patterns.c: 378:             setPixel(i,BT_RGB[0], BT_RGB[1], BT_RGB[2]);
+[e ( _setPixel (4 , , , _i *U + &U _BT_RGB * -> -> -> 0 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux *U + &U _BT_RGB * -> -> -> 1 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux *U + &U _BT_RGB * -> -> -> 2 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux ]
+"379
+[; ;Patterns.c: 379:         }else{
+}
+[e $U 567  ]
+[e :U 566 ]
+{
+"380
+[; ;Patterns.c: 380:             newBT = staticWheel();
+[e = _newBT ( _staticWheel ..  ]
+"381
+[; ;Patterns.c: 381:             setPixel(i,*newBT, *(newBT+1), *(newBT+2));
+[e ( _setPixel (4 , , , _i *U _newBT *U + _newBT * -> -> 1 `i `x -> -> # *U _newBT `i `x *U + _newBT * -> -> 2 `i `x -> -> # *U _newBT `i `x ]
+"382
+[; ;Patterns.c: 382:         }
+}
+[e :U 567 ]
+"383
+[; ;Patterns.c: 383:         Show();
+[e ( _Show ..  ]
+"384
+[; ;Patterns.c: 384:         if(BT_Patron != 5|| BT_rainbow != 0)return;
+[e $ ! || != -> _BT_Patron `i -> 5 `i != -> _BT_rainbow `i -> 0 `i 568  ]
+[e $UE 551  ]
+[e :U 568 ]
+"385
+[; ;Patterns.c: 385:         Delay_ms(BT_Tiempo);
+[e ( _Delay_ms (1 -> _BT_Tiempo `i ]
+"386
+[; ;Patterns.c: 386:         counter++;
+[e ++ _counter -> 1 `i ]
+"387
+[; ;Patterns.c: 387:         if(counter == flag+5) flag += 10;
+[e $ ! == _counter + _flag -> 5 `i 569  ]
+[e =+ _flag -> 10 `i ]
+[e :U 569 ]
+"388
+[; ;Patterns.c: 388:     }
+}
+[e =+ _i -> 1 `i ]
+[e $ < _i _NeoNum 563  ]
+[e :U 564 ]
+}
+"390
+[; ;Patterns.c: 390:     Delay_ms(100);
+[e ( _Delay_ms (1 -> 100 `i ]
+"391
+[; ;Patterns.c: 391:     for(int i = 0; i < NeoNum; ++i){
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i _NeoNum 570  ]
+[e $U 571  ]
+[e :U 570 ]
+{
+"392
+[; ;Patterns.c: 392:         setPixel(i,BT_RGB[0], BT_RGB[1], BT_RGB[2]);
+[e ( _setPixel (4 , , , _i *U + &U _BT_RGB * -> -> -> 0 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux *U + &U _BT_RGB * -> -> -> 1 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux *U + &U _BT_RGB * -> -> -> 2 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux ]
+"393
+[; ;Patterns.c: 393:         Show();
+[e ( _Show ..  ]
+"394
+[; ;Patterns.c: 394:         Delay_ms(BT_Tiempo);
+[e ( _Delay_ms (1 -> _BT_Tiempo `i ]
+"395
+[; ;Patterns.c: 395:         if(BT_Patron != 5|| BT_rainbow != 0)return;
+[e $ ! || != -> _BT_Patron `i -> 5 `i != -> _BT_rainbow `i -> 0 `i 573  ]
+[e $UE 551  ]
+[e :U 573 ]
+"396
+[; ;Patterns.c: 396:     }
+}
+[e =+ _i -> 1 `i ]
+[e $ < _i _NeoNum 570  ]
+[e :U 571 ]
+}
+"397
+[; ;Patterns.c: 397:     if(BT_Patron != 5|| BT_rainbow != 0)return;
+[e $ ! || != -> _BT_Patron `i -> 5 `i != -> _BT_rainbow `i -> 0 `i 574  ]
+[e $UE 551  ]
+[e :U 574 ]
+"398
+[; ;Patterns.c: 398: }
+[e :UE 551 ]
+}
+"400
+[; ;Patterns.c: 400: unsigned char* staticWheel(){
+[v _staticWheel `(*uc ~T0 @X0 1 ef ]
+{
+[e :U _staticWheel ]
+[f ]
+"401
+[; ;Patterns.c: 401:     unsigned char temp[3];
+[v _temp `uc ~T0 @X0 -> 3 `i a ]
+"402
+[; ;Patterns.c: 402:     for(int i=0; i< 3; i++){
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i -> 3 `i 576  ]
+[e $U 577  ]
+[e :U 576 ]
+{
+"403
+[; ;Patterns.c: 403:         temp[i] = BT_RGB[i];
+[e = *U + &U _temp * -> -> _i `ui `ux -> -> # *U &U _temp `ui `ux *U + &U _BT_RGB * -> -> _i `ui `ux -> -> # *U &U _BT_RGB `ui `ux ]
+"404
+[; ;Patterns.c: 404:     }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 3 `i 576  ]
+[e :U 577 ]
+}
+"406
+[; ;Patterns.c: 406:     for(int i = 0; i < 3; i++){
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i -> 3 `i 579  ]
+[e $U 580  ]
+[e :U 579 ]
+{
+"407
+[; ;Patterns.c: 407:         if((temp[i] < 50) && (temp[i] > 10)){
+[e $ ! && < -> *U + &U _temp * -> -> _i `ui `ux -> -> # *U &U _temp `ui `ux `i -> 50 `i > -> *U + &U _temp * -> -> _i `ui `ux -> -> # *U &U _temp `ui `ux `i -> 10 `i 582  ]
+{
+"408
+[; ;Patterns.c: 408:             temp[i] -= 20;
+[e =- *U + &U _temp * -> -> _i `ui `ux -> -> # *U &U _temp `ui `ux -> -> 20 `i `uc ]
+"409
+[; ;Patterns.c: 409:         }
+}
+[e $U 583  ]
+"410
+[; ;Patterns.c: 410:         else if(temp[i] < 100 && temp[i] > 50){
+[e :U 582 ]
+[e $ ! && < -> *U + &U _temp * -> -> _i `ui `ux -> -> # *U &U _temp `ui `ux `i -> 100 `i > -> *U + &U _temp * -> -> _i `ui `ux -> -> # *U &U _temp `ui `ux `i -> 50 `i 584  ]
+{
+"411
+[; ;Patterns.c: 411:             temp[i] -= 25;
+[e =- *U + &U _temp * -> -> _i `ui `ux -> -> # *U &U _temp `ui `ux -> -> 25 `i `uc ]
+"412
+[; ;Patterns.c: 412:         }
+}
+[e $U 585  ]
+"413
+[; ;Patterns.c: 413:         else if(temp[i] < 150 && temp[i] > 100){
+[e :U 584 ]
+[e $ ! && < -> *U + &U _temp * -> -> _i `ui `ux -> -> # *U &U _temp `ui `ux `i -> 150 `i > -> *U + &U _temp * -> -> _i `ui `ux -> -> # *U &U _temp `ui `ux `i -> 100 `i 586  ]
+{
+"414
+[; ;Patterns.c: 414:             temp[i] -= 50;
+[e =- *U + &U _temp * -> -> _i `ui `ux -> -> # *U &U _temp `ui `ux -> -> 50 `i `uc ]
+"415
+[; ;Patterns.c: 415:         }
+}
+[e $U 587  ]
+"416
+[; ;Patterns.c: 416:         else if(temp[i] < 200 && temp[i] > 150){
+[e :U 586 ]
+[e $ ! && < -> *U + &U _temp * -> -> _i `ui `ux -> -> # *U &U _temp `ui `ux `i -> 200 `i > -> *U + &U _temp * -> -> _i `ui `ux -> -> # *U &U _temp `ui `ux `i -> 150 `i 588  ]
+{
+"417
+[; ;Patterns.c: 417:             temp[i] -= 75;
+[e =- *U + &U _temp * -> -> _i `ui `ux -> -> # *U &U _temp `ui `ux -> -> 75 `i `uc ]
+"418
+[; ;Patterns.c: 418:         }
+}
+[e $U 589  ]
+"419
+[; ;Patterns.c: 419:         else if((temp[i] < 255) && (temp[i] > 200)){
+[e :U 588 ]
+[e $ ! && < -> *U + &U _temp * -> -> _i `ui `ux -> -> # *U &U _temp `ui `ux `i -> 255 `i > -> *U + &U _temp * -> -> _i `ui `ux -> -> # *U &U _temp `ui `ux `i -> 200 `i 590  ]
+{
+"420
+[; ;Patterns.c: 420:             temp[i] -= 100;
+[e =- *U + &U _temp * -> -> _i `ui `ux -> -> # *U &U _temp `ui `ux -> -> 100 `i `uc ]
+"421
+[; ;Patterns.c: 421:         }
+}
+[e :U 590 ]
+[e :U 589 ]
+[e :U 587 ]
+[e :U 585 ]
+[e :U 583 ]
+"422
+[; ;Patterns.c: 422:     }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 3 `i 579  ]
+[e :U 580 ]
+}
+"423
+[; ;Patterns.c: 423:     return temp;
+[e ) &U _temp ]
+[e $UE 575  ]
+"424
+[; ;Patterns.c: 424: }
+[e :UE 575 ]
+}
+"425
+[; ;Patterns.c: 425: void Strobe(void){
+[v _Strobe `(v ~T0 @X0 1 ef ]
+{
+[e :U _Strobe ]
+[f ]
+"426
+[; ;Patterns.c: 426:     Time_Check(1);
+[e ( _Time_Check (1 -> 1 `i ]
+"427
+[; ;Patterns.c: 427:     setAll(BT_RGB[0],BT_RGB[1],BT_RGB[2]);
+[e ( _setAll (3 , , *U + &U _BT_RGB * -> -> -> 0 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux *U + &U _BT_RGB * -> -> -> 1 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux *U + &U _BT_RGB * -> -> -> 2 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux ]
+"428
+[; ;Patterns.c: 428:     Show();
+[e ( _Show ..  ]
+"429
+[; ;Patterns.c: 429:     Delay_ms(BT_Tiempo);
+[e ( _Delay_ms (1 -> _BT_Tiempo `i ]
+"430
+[; ;Patterns.c: 430:     setAll(0,0,0);
+[e ( _setAll (3 , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"431
+[; ;Patterns.c: 431:     Show();
+[e ( _Show ..  ]
+"432
+[; ;Patterns.c: 432:     Delay_ms(BT_Tiempo);
+[e ( _Delay_ms (1 -> _BT_Tiempo `i ]
+"433
+[; ;Patterns.c: 433:     if(BT_Patron != 6|| BT_rainbow != 0)return;
+[e $ ! || != -> _BT_Patron `i -> 6 `i != -> _BT_rainbow `i -> 0 `i 592  ]
+[e $UE 591  ]
+[e :U 592 ]
+"434
+[; ;Patterns.c: 434:     Delay_ms(BT_Tiempo);
+[e ( _Delay_ms (1 -> _BT_Tiempo `i ]
+"435
+[; ;Patterns.c: 435: }
+[e :UE 591 ]
+}
+"436
+[; ;Patterns.c: 436: void strobeallColors(void){
+[v _strobeallColors `(v ~T0 @X0 1 ef ]
+{
+[e :U _strobeallColors ]
+[f ]
+"437
+[; ;Patterns.c: 437:     unsigned char *c;
+[v _c `*uc ~T0 @X0 1 a ]
+"438
+[; ;Patterns.c: 438:     Time_Check(1);
+[e ( _Time_Check (1 -> 1 `i ]
+"439
+[; ;Patterns.c: 439:     for(int i=0;i<256;i=i+25){
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i -> 256 `i 594  ]
+[e $U 595  ]
+[e :U 594 ]
+{
+"440
+[; ;Patterns.c: 440:         c = Wheel(i);
+[e = _c ( _Wheel (1 _i ]
+"441
+[; ;Patterns.c: 441:         setAll(*c,*(c+1),*(c+2));
+[e ( _setAll (3 , , *U _c *U + _c * -> -> 1 `i `x -> -> # *U _c `i `x *U + _c * -> -> 2 `i `x -> -> # *U _c `i `x ]
+"442
+[; ;Patterns.c: 442:         Show();
+[e ( _Show ..  ]
+"443
+[; ;Patterns.c: 443:         Delay_ms(BT_Tiempo);
+[e ( _Delay_ms (1 -> _BT_Tiempo `i ]
+"444
+[; ;Patterns.c: 444:         setAll(0,0,0);
+[e ( _setAll (3 , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"445
+[; ;Patterns.c: 445:         Show();
+[e ( _Show ..  ]
+"446
+[; ;Patterns.c: 446:         Delay_ms(BT_Tiempo);
+[e ( _Delay_ms (1 -> _BT_Tiempo `i ]
+"447
+[; ;Patterns.c: 447:     }
+}
+[e = _i + _i -> 25 `i ]
+[e $ < _i -> 256 `i 594  ]
+[e :U 595 ]
+}
+"448
+[; ;Patterns.c: 448:     if(BT_Patron != 6)return;
+[e $ ! != -> _BT_Patron `i -> 6 `i 597  ]
+[e $UE 593  ]
+[e :U 597 ]
+"449
+[; ;Patterns.c: 449:     Delay_ms(BT_Tiempo);
+[e ( _Delay_ms (1 -> _BT_Tiempo `i ]
+"450
+[; ;Patterns.c: 450: }
+[e :UE 593 ]
+}
+"451
+[; ;Patterns.c: 451: void FadeAllcolors(void){
+[v _FadeAllcolors `(v ~T0 @X0 1 ef ]
+{
+[e :U _FadeAllcolors ]
+[f ]
+"452
+[; ;Patterns.c: 452:     unsigned char *c;
+[v _c `*uc ~T0 @X0 1 a ]
+"453
+[; ;Patterns.c: 453:     float r, g, b;
+[v _r `f ~T0 @X0 1 a ]
+[v _g `f ~T0 @X0 1 a ]
+[v _b `f ~T0 @X0 1 a ]
+"454
+[; ;Patterns.c: 454:     Time_Check(5);
+[e ( _Time_Check (1 -> 5 `i ]
+"455
+[; ;Patterns.c: 455:     for(int j=0;j<255;j=j+25){
+{
+[v _j `i ~T0 @X0 1 a ]
+[e = _j -> 0 `i ]
+[e $ < _j -> 255 `i 599  ]
+[e $U 600  ]
+[e :U 599 ]
+{
+"456
+[; ;Patterns.c: 456:         c = Wheel(j);
+[e = _c ( _Wheel (1 _j ]
+"457
+[; ;Patterns.c: 457:         for(int k = 0; k < 255; k=k+1) {
+{
+[v _k `i ~T0 @X0 1 a ]
+[e = _k -> 0 `i ]
+[e $ < _k -> 255 `i 602  ]
+[e $U 603  ]
+[e :U 602 ]
+{
+"458
+[; ;Patterns.c: 458:             r = (k/255.0)*(*c);
+[e = _r -> * / -> _k `d .255.0 -> -> *U _c `i `d `f ]
+"459
+[; ;Patterns.c: 459:             g = (k/255.0)*(*(c+1));
+[e = _g -> * / -> _k `d .255.0 -> -> *U + _c * -> -> 1 `i `x -> -> # *U _c `i `x `i `d `f ]
+"460
+[; ;Patterns.c: 460:             b = (k/255.0)*(*(c+2));
+[e = _b -> * / -> _k `d .255.0 -> -> *U + _c * -> -> 2 `i `x -> -> # *U _c `i `x `i `d `f ]
+"461
+[; ;Patterns.c: 461:            setAll(r,g,b);
+[e ( _setAll (3 , , -> _r `uc -> _g `uc -> _b `uc ]
+"462
+[; ;Patterns.c: 462:            if( BT_Patron!= 8 || BT_rainbow != 1)return;
+[e $ ! || != -> _BT_Patron `i -> 8 `i != -> _BT_rainbow `i -> 1 `i 605  ]
+[e $UE 598  ]
+[e :U 605 ]
+"463
+[; ;Patterns.c: 463:             Delay_ms(BT_Tiempo);
+[e ( _Delay_ms (1 -> _BT_Tiempo `i ]
+"464
+[; ;Patterns.c: 464:         }
+}
+[e = _k + _k -> 1 `i ]
+[e $ < _k -> 255 `i 602  ]
+[e :U 603 ]
+}
+"465
+[; ;Patterns.c: 465:         for(int k = 255; k >0; k=k-2) {
+{
+[v _k `i ~T0 @X0 1 a ]
+[e = _k -> 255 `i ]
+[e $ > _k -> 0 `i 606  ]
+[e $U 607  ]
+[e :U 606 ]
+{
+"466
+[; ;Patterns.c: 466:             r = (k/255.0)*(*c);
+[e = _r -> * / -> _k `d .255.0 -> -> *U _c `i `d `f ]
+"467
+[; ;Patterns.c: 467:             g = (k/255.0)*(*(c+1));
+[e = _g -> * / -> _k `d .255.0 -> -> *U + _c * -> -> 1 `i `x -> -> # *U _c `i `x `i `d `f ]
+"468
+[; ;Patterns.c: 468:             b = (k/255.0)*(*(c+2));
+[e = _b -> * / -> _k `d .255.0 -> -> *U + _c * -> -> 2 `i `x -> -> # *U _c `i `x `i `d `f ]
+"469
+[; ;Patterns.c: 469:             setAll(r,g,b);
+[e ( _setAll (3 , , -> _r `uc -> _g `uc -> _b `uc ]
+"470
+[; ;Patterns.c: 470:             if( BT_Patron!= 8 || BT_rainbow != 1)return;
+[e $ ! || != -> _BT_Patron `i -> 8 `i != -> _BT_rainbow `i -> 1 `i 609  ]
+[e $UE 598  ]
+[e :U 609 ]
+"471
+[; ;Patterns.c: 471:             Delay_ms(BT_Tiempo);
+[e ( _Delay_ms (1 -> _BT_Tiempo `i ]
+"472
+[; ;Patterns.c: 472:       }
+}
+[e = _k - _k -> 2 `i ]
+[e $ > _k -> 0 `i 606  ]
+[e :U 607 ]
+}
+"473
+[; ;Patterns.c: 473:     }
+}
+[e = _j + _j -> 25 `i ]
+[e $ < _j -> 255 `i 599  ]
+[e :U 600 ]
+}
+"474
+[; ;Patterns.c: 474: }
+[e :UE 598 ]
+}
+"475
+[; ;Patterns.c: 475: void SetAllcolors(void){
+[v _SetAllcolors `(v ~T0 @X0 1 ef ]
+{
+[e :U _SetAllcolors ]
+[f ]
+"476
+[; ;Patterns.c: 476:     unsigned char *c;
+[v _c `*uc ~T0 @X0 1 a ]
+"477
+[; ;Patterns.c: 477:     int flag = 10;
+[v _flag `i ~T0 @X0 1 a ]
+[e = _flag -> 10 `i ]
+"478
+[; ;Patterns.c: 478:     Time_Check(5);
+[e ( _Time_Check (1 -> 5 `i ]
+"479
+[; ;Patterns.c: 479:     for(int j=0;j<255;j+=5){
+{
+[v _j `i ~T0 @X0 1 a ]
+[e = _j -> 0 `i ]
+[e $ < _j -> 255 `i 611  ]
+[e $U 612  ]
+[e :U 611 ]
+{
+"480
+[; ;Patterns.c: 480:         setAll( *c, *(c+1), *(c+2));
+[e ( _setAll (3 , , *U _c *U + _c * -> -> 1 `i `x -> -> # *U _c `i `x *U + _c * -> -> 2 `i `x -> -> # *U _c `i `x ]
+"481
+[; ;Patterns.c: 481:         for(int i = 0; i < NeoNum; i++){
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i _NeoNum 614  ]
+[e $U 615  ]
+[e :U 614 ]
+{
+"482
+[; ;Patterns.c: 482:             c = Wheel(j);
+[e = _c ( _Wheel (1 _j ]
+"483
+[; ;Patterns.c: 483:             setPixel(i, *c, *(c+1), *(c+2));
+[e ( _setPixel (4 , , , _i *U _c *U + _c * -> -> 1 `i `x -> -> # *U _c `i `x *U + _c * -> -> 2 `i `x -> -> # *U _c `i `x ]
+"484
+[; ;Patterns.c: 484:             Show();
+[e ( _Show ..  ]
+"485
+[; ;Patterns.c: 485:             Delay_ms(BT_Tiempo);
+[e ( _Delay_ms (1 -> _BT_Tiempo `i ]
+"486
+[; ;Patterns.c: 486:         }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i _NeoNum 614  ]
+[e :U 615 ]
+}
+"487
+[; ;Patterns.c: 487:         Delay_ms(BT_Tiempo);
+[e ( _Delay_ms (1 -> _BT_Tiempo `i ]
+"488
+[; ;Patterns.c: 488:         if( BT_Patron!= 8 || BT_rainbow != 0)return;
+[e $ ! || != -> _BT_Patron `i -> 8 `i != -> _BT_rainbow `i -> 0 `i 617  ]
+[e $UE 610  ]
+[e :U 617 ]
+"489
+[; ;Patterns.c: 489:     }
+}
+[e =+ _j -> 5 `i ]
+[e $ < _j -> 255 `i 611  ]
+[e :U 612 ]
+}
+"490
+[; ;Patterns.c: 490: }
+[e :UE 610 ]
+}
+"491
+[; ;Patterns.c: 491: void RunningLights(void) {
+[v _RunningLights `(v ~T0 @X0 1 ef ]
+{
+[e :U _RunningLights ]
+[f ]
+"492
+[; ;Patterns.c: 492:     int pixelOn= 4;
+[v _pixelOn `i ~T0 @X0 1 a ]
+[e = _pixelOn -> 4 `i ]
+"493
+[; ;Patterns.c: 493:     int position = 0;
+[v _position `i ~T0 @X0 1 a ]
+[e = _position -> 0 `i ]
+"494
+[; ;Patterns.c: 494:     Time_Check(3);
+[e ( _Time_Check (1 -> 3 `i ]
+"495
+[; ;Patterns.c: 495:     for (unsigned char q=0; q < pixelOn; q++) {
+{
+[v _q `uc ~T0 @X0 1 a ]
+[e = _q -> -> 0 `i `uc ]
+[e $U 622  ]
+[e :U 619 ]
+{
+"496
+[; ;Patterns.c: 496:         for (int i=NeoNum; i>=0; i=i-pixelOn) {
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i _NeoNum ]
+[e $ >= _i -> 0 `i 623  ]
+[e $U 624  ]
+[e :U 623 ]
+{
+"497
+[; ;Patterns.c: 497:             setPixel(i+q, BT_RGB[0]/2, BT_RGB[1]/2, BT_RGB[2]/2);
+[e ( _setPixel (4 , , , + _i -> _q `i -> / -> *U + &U _BT_RGB * -> -> -> 0 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux `i -> 2 `i `uc -> / -> *U + &U _BT_RGB * -> -> -> 1 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux `i -> 2 `i `uc -> / -> *U + &U _BT_RGB * -> -> -> 2 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux `i -> 2 `i `uc ]
+"499
+[; ;Patterns.c: 499:         }
+}
+[e = _i - _i _pixelOn ]
+[e $ >= _i -> 0 `i 623  ]
+[e :U 624 ]
+}
+"500
+[; ;Patterns.c: 500:         if(BT_Patron != 9|| BT_rainbow != 0)return;
+[e $ ! || != -> _BT_Patron `i -> 9 `i != -> _BT_rainbow `i -> 0 `i 626  ]
+[e $UE 618  ]
+[e :U 626 ]
+"501
+[; ;Patterns.c: 501:         Show();
+[e ( _Show ..  ]
+"502
+[; ;Patterns.c: 502:         Delay_ms(BT_Tiempo);
+[e ( _Delay_ms (1 -> _BT_Tiempo `i ]
+"503
+[; ;Patterns.c: 503:         for (int i=NeoNum; i>=0; i=i-pixelOn) {
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i _NeoNum ]
+[e $ >= _i -> 0 `i 627  ]
+[e $U 628  ]
+[e :U 627 ]
+{
+"504
+[; ;Patterns.c: 504:             setPixel(i+q,BT_RGB[0], BT_RGB[1], BT_RGB[2]);
+[e ( _setPixel (4 , , , + _i -> _q `i *U + &U _BT_RGB * -> -> -> 0 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux *U + &U _BT_RGB * -> -> -> 1 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux *U + &U _BT_RGB * -> -> -> 2 `i `ui `ux -> -> # *U &U _BT_RGB `ui `ux ]
+"505
+[; ;Patterns.c: 505:         }
+}
+[e = _i - _i _pixelOn ]
+[e $ >= _i -> 0 `i 627  ]
+[e :U 628 ]
+}
+"506
+[; ;Patterns.c: 506:         if(BT_Patron != 9|| BT_rainbow != 0)return;
+[e $ ! || != -> _BT_Patron `i -> 9 `i != -> _BT_rainbow `i -> 0 `i 630  ]
+[e $UE 618  ]
+[e :U 630 ]
+"507
+[; ;Patterns.c: 507:     }
+}
+[e ++ _q -> -> 1 `i `uc ]
+[e :U 622 ]
+[e $ < -> _q `i _pixelOn 619  ]
+[e :U 620 ]
+}
+"524
+[; ;Patterns.c: 524: }
+[e :UE 618 ]
+}
+"525
+[; ;Patterns.c: 525: void RunningLightsRainbow(void){
+[v _RunningLightsRainbow `(v ~T0 @X0 1 ef ]
+{
+[e :U _RunningLightsRainbow ]
+[f ]
+"526
+[; ;Patterns.c: 526:     int pixelOn = 5;
+[v _pixelOn `i ~T0 @X0 1 a ]
+[e = _pixelOn -> 5 `i ]
+"527
+[; ;Patterns.c: 527:     unsigned char *c;
+[v _c `*uc ~T0 @X0 1 a ]
+"528
+[; ;Patterns.c: 528:     Time_Check(5);
+[e ( _Time_Check (1 -> 5 `i ]
+"530
+[; ;Patterns.c: 530:     for(int i = 0; i<255;i++){
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i -> 255 `i 632  ]
+[e $U 633  ]
+[e :U 632 ]
+{
+"531
+[; ;Patterns.c: 531:         c = Wheel(i);
+[e = _c ( _Wheel (1 _i ]
+"532
+[; ;Patterns.c: 532:         for(int q = 0; q<pixelOn; q++){
+{
+[v _q `i ~T0 @X0 1 a ]
+[e = _q -> 0 `i ]
+[e $U 638  ]
+[e :U 635 ]
+{
+"533
+[; ;Patterns.c: 533:             for (int i=0; i < NeoNum; i=i+pixelOn) {
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i _NeoNum 639  ]
+[e $U 640  ]
+[e :U 639 ]
+{
+"534
+[; ;Patterns.c: 534:                 setPixel(i+q, *c/2,*(c+1)/2,*(c+2)/2);
+[e ( _setPixel (4 , , , + _i _q -> / -> *U _c `i -> 2 `i `uc -> / -> *U + _c * -> -> 1 `i `x -> -> # *U _c `i `x `i -> 2 `i `uc -> / -> *U + _c * -> -> 2 `i `x -> -> # *U _c `i `x `i -> 2 `i `uc ]
+"537
+[; ;Patterns.c: 537:             }
+}
+[e = _i + _i _pixelOn ]
+[e $ < _i _NeoNum 639  ]
+[e :U 640 ]
+}
+"538
+[; ;Patterns.c: 538:             if(BT_Patron != 9 || BT_rainbow != 1)return;
+[e $ ! || != -> _BT_Patron `i -> 9 `i != -> _BT_rainbow `i -> 1 `i 642  ]
+[e $UE 631  ]
+[e :U 642 ]
+"539
+[; ;Patterns.c: 539:             Show();
+[e ( _Show ..  ]
+"540
+[; ;Patterns.c: 540:             Delay_ms(BT_Tiempo);
+[e ( _Delay_ms (1 -> _BT_Tiempo `i ]
+"541
+[; ;Patterns.c: 541:             for (int i=0; i < NeoNum; i=i+pixelOn) {
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i _NeoNum 643  ]
+[e $U 644  ]
+[e :U 643 ]
+{
+"542
+[; ;Patterns.c: 542:                 setPixel(i+q,*c,*(c+1),*(c+2));
+[e ( _setPixel (4 , , , + _i _q *U _c *U + _c * -> -> 1 `i `x -> -> # *U _c `i `x *U + _c * -> -> 2 `i `x -> -> # *U _c `i `x ]
+"544
+[; ;Patterns.c: 544:             }
+}
+[e = _i + _i _pixelOn ]
+[e $ < _i _NeoNum 643  ]
+[e :U 644 ]
+}
+"545
+[; ;Patterns.c: 545:             if(BT_Patron != 9 || BT_rainbow != 1)return;
+[e $ ! || != -> _BT_Patron `i -> 9 `i != -> _BT_rainbow `i -> 1 `i 646  ]
+[e $UE 631  ]
+[e :U 646 ]
+"546
+[; ;Patterns.c: 546:         }
+}
+[e ++ _q -> 1 `i ]
+[e :U 638 ]
+[e $ < _q _pixelOn 635  ]
+[e :U 636 ]
+}
+"547
+[; ;Patterns.c: 547:     }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 255 `i 632  ]
+[e :U 633 ]
+}
+"548
+[; ;Patterns.c: 548: }
+[e :UE 631 ]
+}
+"549
+[; ;Patterns.c: 549: unsigned char * Wheel(int WheelPos) {
+[v _Wheel `(*uc ~T0 @X0 1 ef1`i ]
+{
+[e :U _Wheel ]
+[v _WheelPos `i ~T0 @X0 1 r1 ]
+[f ]
+"550
+[; ;Patterns.c: 550:     static unsigned char c[3];
+[v F3327 `uc ~T0 @X0 -> 3 `i s c ]
+"552
+[; ;Patterns.c: 552:     if(WheelPos < 43) {
+[e $ ! < _WheelPos -> 43 `i 648  ]
+{
+"554
+[; ;Patterns.c: 554:         c[0]=255;
+[e = *U + &U F3327 * -> -> -> 0 `i `ui `ux -> -> # *U &U F3327 `ui `ux -> -> 255 `i `uc ]
+"555
+[; ;Patterns.c: 555:         c[1]=0;
+[e = *U + &U F3327 * -> -> -> 1 `i `ui `ux -> -> # *U &U F3327 `ui `ux -> -> 0 `i `uc ]
+"556
+[; ;Patterns.c: 556:         c[2]=WheelPos*6;
+[e = *U + &U F3327 * -> -> -> 2 `i `ui `ux -> -> # *U &U F3327 `ui `ux -> * _WheelPos -> 6 `i `uc ]
+"557
+[; ;Patterns.c: 557:     } else if(WheelPos < 86) {
+}
+[e $U 649  ]
+[e :U 648 ]
+[e $ ! < _WheelPos -> 86 `i 650  ]
+{
+"558
+[; ;Patterns.c: 558:      WheelPos -= 43;
+[e =- _WheelPos -> 43 `i ]
+"559
+[; ;Patterns.c: 559:         c[0]=255-(WheelPos*6);
+[e = *U + &U F3327 * -> -> -> 0 `i `ui `ux -> -> # *U &U F3327 `ui `ux -> - -> 255 `i * _WheelPos -> 6 `i `uc ]
+"560
+[; ;Patterns.c: 560:         c[1]=0;
+[e = *U + &U F3327 * -> -> -> 1 `i `ui `ux -> -> # *U &U F3327 `ui `ux -> -> 0 `i `uc ]
+"561
+[; ;Patterns.c: 561:         c[2]=255 ;
+[e = *U + &U F3327 * -> -> -> 2 `i `ui `ux -> -> # *U &U F3327 `ui `ux -> -> 255 `i `uc ]
+"562
+[; ;Patterns.c: 562:     } else if(WheelPos < 129){
+}
+[e $U 651  ]
+[e :U 650 ]
+[e $ ! < _WheelPos -> 129 `i 652  ]
+{
+"563
+[; ;Patterns.c: 563:         WheelPos -= 86;
+[e =- _WheelPos -> 86 `i ]
+"564
+[; ;Patterns.c: 564:         c[0]=0;
+[e = *U + &U F3327 * -> -> -> 0 `i `ui `ux -> -> # *U &U F3327 `ui `ux -> -> 0 `i `uc ]
+"565
+[; ;Patterns.c: 565:         c[1]=WheelPos *6;
+[e = *U + &U F3327 * -> -> -> 1 `i `ui `ux -> -> # *U &U F3327 `ui `ux -> * _WheelPos -> 6 `i `uc ]
+"566
+[; ;Patterns.c: 566:         c[2]=255;
+[e = *U + &U F3327 * -> -> -> 2 `i `ui `ux -> -> # *U &U F3327 `ui `ux -> -> 255 `i `uc ]
+"567
+[; ;Patterns.c: 567:     }else if(WheelPos < 171){
+}
+[e $U 653  ]
+[e :U 652 ]
+[e $ ! < _WheelPos -> 171 `i 654  ]
+{
+"568
+[; ;Patterns.c: 568:         WheelPos -= 129;
+[e =- _WheelPos -> 129 `i ]
+"569
+[; ;Patterns.c: 569:         c[0]=0;
+[e = *U + &U F3327 * -> -> -> 0 `i `ui `ux -> -> # *U &U F3327 `ui `ux -> -> 0 `i `uc ]
+"570
+[; ;Patterns.c: 570:         c[1]=255;
+[e = *U + &U F3327 * -> -> -> 1 `i `ui `ux -> -> # *U &U F3327 `ui `ux -> -> 255 `i `uc ]
+"571
+[; ;Patterns.c: 571:         c[2]=255 - (WheelPos*6);
+[e = *U + &U F3327 * -> -> -> 2 `i `ui `ux -> -> # *U &U F3327 `ui `ux -> - -> 255 `i * _WheelPos -> 6 `i `uc ]
+"572
+[; ;Patterns.c: 572:     }else if(WheelPos < 213){
+}
+[e $U 655  ]
+[e :U 654 ]
+[e $ ! < _WheelPos -> 213 `i 656  ]
+{
+"573
+[; ;Patterns.c: 573:         WheelPos -= 171;
+[e =- _WheelPos -> 171 `i ]
+"574
+[; ;Patterns.c: 574:         c[0]=WheelPos*6;
+[e = *U + &U F3327 * -> -> -> 0 `i `ui `ux -> -> # *U &U F3327 `ui `ux -> * _WheelPos -> 6 `i `uc ]
+"575
+[; ;Patterns.c: 575:         c[1]=255;
+[e = *U + &U F3327 * -> -> -> 1 `i `ui `ux -> -> # *U &U F3327 `ui `ux -> -> 255 `i `uc ]
+"576
+[; ;Patterns.c: 576:         c[2]=0;
+[e = *U + &U F3327 * -> -> -> 2 `i `ui `ux -> -> # *U &U F3327 `ui `ux -> -> 0 `i `uc ]
+"577
+[; ;Patterns.c: 577:     }else{
+}
+[e $U 657  ]
+[e :U 656 ]
+{
+"578
+[; ;Patterns.c: 578:         WheelPos -= 213;
+[e =- _WheelPos -> 213 `i ]
+"579
+[; ;Patterns.c: 579:         c[0]=255;
+[e = *U + &U F3327 * -> -> -> 0 `i `ui `ux -> -> # *U &U F3327 `ui `ux -> -> 255 `i `uc ]
+"580
+[; ;Patterns.c: 580:          c[1]=255-(WheelPos *6);
+[e = *U + &U F3327 * -> -> -> 1 `i `ui `ux -> -> # *U &U F3327 `ui `ux -> - -> 255 `i * _WheelPos -> 6 `i `uc ]
+"581
+[; ;Patterns.c: 581:          c[2]=0;
+[e = *U + &U F3327 * -> -> -> 2 `i `ui `ux -> -> # *U &U F3327 `ui `ux -> -> 0 `i `uc ]
+"582
+[; ;Patterns.c: 582:     }
+}
+[e :U 657 ]
+[e :U 655 ]
+[e :U 653 ]
+[e :U 651 ]
+[e :U 649 ]
+"584
+[; ;Patterns.c: 584:     return c;
+[e ) &U F3327 ]
+[e $UE 647  ]
+"585
+[; ;Patterns.c: 585: }
+[e :UE 647 ]
+}
+"586
+[; ;Patterns.c: 586: void Time_Check(int Time){
+[v _Time_Check `(v ~T0 @X0 1 ef1`i ]
+{
+[e :U _Time_Check ]
+[v _Time `i ~T0 @X0 1 r1 ]
+[f ]
+"587
+[; ;Patterns.c: 587:     if(BT_Tiempo < Time){
+[e $ ! < -> _BT_Tiempo `i _Time 659  ]
+{
+"588
+[; ;Patterns.c: 588:         BT_Tiempo = Time;
+[e = _BT_Tiempo -> _Time `uc ]
+"589
+[; ;Patterns.c: 589:     }
+}
+[e :U 659 ]
+"591
+[; ;Patterns.c: 591: }
+[e :UE 658 ]
+}
+"592
+[; ;Patterns.c: 592: void Delay_ms(int time){
+[v _Delay_ms `(v ~T0 @X0 1 ef1`i ]
+{
+[e :U _Delay_ms ]
+[v _time `i ~T0 @X0 1 r1 ]
+[f ]
+"593
+[; ;Patterns.c: 593:     int l;
+[v _l `i ~T0 @X0 1 a ]
+"594
+[; ;Patterns.c: 594:     if(time == 0){
+[e $ ! == _time -> 0 `i 661  ]
+{
+"595
+[; ;Patterns.c: 595:         time = 1;
+[e = _time -> 1 `i ]
+"596
+[; ;Patterns.c: 596:     }
+}
+[e :U 661 ]
+"597
+[; ;Patterns.c: 597:     for(l=0;l<time;l++){
+{
+[e = _l -> 0 `i ]
+[e $U 665  ]
+[e :U 662 ]
+{
+"598
+[; ;Patterns.c: 598:         _delay((unsigned long)((1)*(48000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
+"599
+[; ;Patterns.c: 599:     }
+}
+[e ++ _l -> 1 `i ]
+[e :U 665 ]
+[e $ < _l _time 662  ]
+[e :U 663 ]
+}
+"600
+[; ;Patterns.c: 600: }
+[e :UE 660 ]
+}

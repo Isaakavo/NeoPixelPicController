@@ -1,0 +1,756 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4550 ]
+[d frameptr 4065 ]
+"7 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"7 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"43 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\lbdiv.c
+[v ___lbdiv __lbdiv `(uc  1 e 1 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+"13 D:\Microchip\Proyectos\NeoPixelController.X\Main.c
+[v _ISR ISR `IIH(v  1 e 1 0 ]
+"26
+[v _checkBuff checkBuff `(v  1 e 1 0 ]
+"72
+[v _turnOff turnOff `(v  1 e 1 0 ]
+"79
+[v _initiateLeds initiateLeds `(v  1 e 1 0 ]
+"88
+[v _main main `(i  1 e 2 0 ]
+"5 D:\Microchip\Proyectos\NeoPixelController.X\NeoFunctions.c
+[v _Show Show `(v  1 e 1 0 ]
+"17
+[v _setAll setAll `(v  1 e 1 0 ]
+"26
+[v _setPixel setPixel `(v  1 e 1 0 ]
+"16 D:\Microchip\Proyectos\NeoPixelController.X\Patterns.c
+[v _RGBLoop RGBLoop `(v  1 e 1 0 ]
+"47
+[v _colorWipe colorWipe `(v  1 e 1 0 ]
+"106
+[v _colorWipeRainbow colorWipeRainbow `(v  1 e 1 0 ]
+"174
+[v _FadeInOut FadeInOut `(v  1 e 1 0 ]
+"197
+[v _fadeInOutRainbow fadeInOutRainbow `(v  1 e 1 0 ]
+"225
+[v _theaterChase theaterChase `(v  1 e 1 0 ]
+"242
+[v _theaterChaseRainbow theaterChaseRainbow `(v  1 e 1 0 ]
+"264
+[v _CylonBounce CylonBounce `(v  1 e 1 0 ]
+"289
+[v _CycloneBounceRainbow CycloneBounceRainbow `(v  1 e 1 0 ]
+"319
+[v _rainbowCycle rainbowCycle `(v  1 e 1 0 ]
+"343
+[v _SetAllColor SetAllColor `(v  1 e 1 0 ]
+"400
+[v _staticWheel staticWheel `(*.30uc  1 e 2 0 ]
+"425
+[v _Strobe Strobe `(v  1 e 1 0 ]
+"436
+[v _strobeallColors strobeallColors `(v  1 e 1 0 ]
+"451
+[v _FadeAllcolors FadeAllcolors `(v  1 e 1 0 ]
+"475
+[v _SetAllcolors SetAllcolors `(v  1 e 1 0 ]
+"491
+[v _RunningLights RunningLights `(v  1 e 1 0 ]
+"525
+[v _RunningLightsRainbow RunningLightsRainbow `(v  1 e 1 0 ]
+"549
+[v _Wheel Wheel `(*.30uc  1 e 2 0 ]
+"586
+[v _Time_Check Time_Check `(v  1 e 1 0 ]
+"592
+[v _Delay_ms Delay_ms `(v  1 e 1 0 ]
+"14 D:\Microchip\Proyectos\NeoPixelController.X\Settings.c
+[v _Config4550 Config4550 `(v  1 e 1 0 ]
+"56 D:\Microchip\Proyectos\NeoPixelController.X/Main.h
+[v _BT_RC BT_RC `VE[5]uc  1 e 5 0 ]
+"57
+[v _BT_Patron BT_Patron `VEuc  1 e 1 0 ]
+"58
+[v _BT_Tiempo BT_Tiempo `VEuc  1 e 1 0 ]
+"59
+[v _BT_Buff BT_Buff `VEuc  1 e 1 0 ]
+"60
+[v _BT_RGB BT_RGB `VE[3]uc  1 e 3 0 ]
+"61
+[v _BT_rainbow BT_rainbow `VEb  1 e 0 0 ]
+"12 D:\Microchip\Proyectos\NeoPixelController.X/NeoFunctions.h
+[v _ByteR ByteR `Nuc  1 e 1 0 ]
+[v _ByteG ByteG `Nuc  1 e 1 0 ]
+[v _ByteB ByteB `Nuc  1 e 1 0 ]
+"13
+[v _NumofBytes NumofBytes `[630]i  1 e 1260 0 ]
+"2314 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h
+[v _PORTA PORTA `VEuc  1 e 1 @3968 ]
+"2453
+[v _PORTB PORTB `VEuc  1 e 1 @3969 ]
+"2563
+[v _PORTC PORTC `VEuc  1 e 1 @3970 ]
+"2705
+[v _PORTD PORTD `VEuc  1 e 1 @3971 ]
+"2826
+[v _PORTE PORTE `VEuc  1 e 1 @3972 ]
+"3427
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"3625
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"3847
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+[s S397 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"3875
+[s S404 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+[u S411 . 1 `S397 1 . 1 0 `S404 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES411  1 e 1 @3988 ]
+"4001
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"4223
+[v _TRISE TRISE `VEuc  1 e 1 @3990 ]
+[s S434 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 SPPIE 1 0 :1:7 
+]
+"4408
+[s S443 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TX1IE 1 0 :1:4 
+`uc 1 RC1IE 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 PSPIE 1 0 :1:7 
+]
+[u S449 . 1 `S434 1 . 1 0 `S443 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES449  1 e 1 @3997 ]
+[s S24 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 SPPIF 1 0 :1:7 
+]
+"4492
+[s S33 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 PSPIF 1 0 :1:7 
+]
+[u S39 . 1 `S24 1 . 1 0 `S33 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES39  1 e 1 @3998 ]
+"4936
+[v _RCSTA RCSTA `VEuc  1 e 1 @4011 ]
+"5146
+[v _TXSTA TXSTA `VEuc  1 e 1 @4012 ]
+"5414
+[v _RCREG RCREG `VEuc  1 e 1 @4014 ]
+"5426
+[v _SPBRG SPBRG `VEuc  1 e 1 @4015 ]
+"5438
+[v _SPBRGH SPBRGH `VEuc  1 e 1 @4016 ]
+"6062
+[v _BAUDCON BAUDCON `VEuc  1 e 1 @4024 ]
+"7415
+[v _T1CON T1CON `VEuc  1 e 1 @4045 ]
+"7525
+[v _TMR1L TMR1L `VEuc  1 e 1 @4046 ]
+"7532
+[v _TMR1H TMR1H `VEuc  1 e 1 @4047 ]
+[s S468 . 1 `uc 1 NOT_BOR 1 0 :1:0 
+]
+"7588
+[s S470 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_POR 1 0 :1:1 
+]
+[s S473 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_PD 1 0 :1:2 
+]
+[s S476 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_TO 1 0 :1:3 
+]
+[s S479 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 NOT_RI 1 0 :1:4 
+]
+[s S482 . 1 `uc 1 nBOR 1 0 :1:0 
+`uc 1 nPOR 1 0 :1:1 
+`uc 1 nPD 1 0 :1:2 
+`uc 1 nTO 1 0 :1:3 
+`uc 1 nRI 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 SBOREN 1 0 :1:6 
+`uc 1 IPEN 1 0 :1:7 
+]
+[s S491 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 NOT_IPEN 1 0 :1:7 
+]
+[s S494 . 1 `uc 1 BOR 1 0 :1:0 
+`uc 1 POR 1 0 :1:1 
+`uc 1 PD 1 0 :1:2 
+`uc 1 TO 1 0 :1:3 
+`uc 1 RI 1 0 :1:4 
+`uc 1 . 1 0 :2:5 
+`uc 1 nIPEN 1 0 :1:7 
+]
+[u S502 . 1 `S468 1 . 1 0 `S470 1 . 1 0 `S473 1 . 1 0 `S476 1 . 1 0 `S479 1 . 1 0 `S482 1 . 1 0 `S491 1 . 1 0 `S494 1 . 1 0 ]
+[v _RCONbits RCONbits `VES502  1 e 1 @4048 ]
+[s S352 . 1 `uc 1 SCS 1 0 :2:0 
+`uc 1 IOFS 1 0 :1:2 
+`uc 1 OSTS 1 0 :1:3 
+`uc 1 IRCF 1 0 :3:4 
+`uc 1 IDLEN 1 0 :1:7 
+]
+"8009
+[s S358 . 1 `uc 1 SCS0 1 0 :1:0 
+`uc 1 SCS1 1 0 :1:1 
+`uc 1 FLTS 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 IRCF0 1 0 :1:4 
+`uc 1 IRCF1 1 0 :1:5 
+`uc 1 IRCF2 1 0 :1:6 
+]
+[u S366 . 1 `S352 1 . 1 0 `S358 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES366  1 e 1 @4051 ]
+[s S546 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"8614
+[s S555 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S564 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S568 . 1 `S546 1 . 1 0 `S555 1 . 1 0 `S564 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES568  1 e 1 @4082 ]
+"88 D:\Microchip\Proyectos\NeoPixelController.X\Main.c
+[v _main main `(i  1 e 2 0 ]
+{
+"162
+} 0
+"72
+[v _turnOff turnOff `(v  1 e 1 0 ]
+{
+"78
+} 0
+"242 D:\Microchip\Proyectos\NeoPixelController.X\Patterns.c
+[v _theaterChaseRainbow theaterChaseRainbow `(v  1 e 1 0 ]
+{
+"256
+[v theaterChaseRainbow@i_283 i `i  1 a 2 24 ]
+"247
+[v theaterChaseRainbow@i i `i  1 a 2 26 ]
+"246
+[v theaterChaseRainbow@q q `uc  1 a 1 28 ]
+"245
+[v theaterChaseRainbow@j j `uc  1 a 1 23 ]
+"243
+[v theaterChaseRainbow@c c `*.30uc  1 a 1 29 ]
+"263
+} 0
+"7 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 7 ]
+[v ___awmod@counter counter `uc  1 a 1 6 ]
+"7
+[v ___awmod@dividend dividend `i  1 p 2 2 ]
+[v ___awmod@divisor divisor `i  1 p 2 4 ]
+"34
+} 0
+"225 D:\Microchip\Proyectos\NeoPixelController.X\Patterns.c
+[v _theaterChase theaterChase `(v  1 e 1 0 ]
+{
+"236
+[v theaterChase@i_277 i `i  1 a 2 25 ]
+"228
+[v theaterChase@i i `i  1 a 2 23 ]
+"227
+[v theaterChase@q q `uc  1 a 1 27 ]
+"241
+} 0
+"436
+[v _strobeallColors strobeallColors `(v  1 e 1 0 ]
+{
+"439
+[v strobeallColors@i i `i  1 a 2 27 ]
+"437
+[v strobeallColors@c c `*.30uc  1 a 1 26 ]
+"450
+} 0
+"319
+[v _rainbowCycle rainbowCycle `(v  1 e 1 0 ]
+{
+"333
+[v rainbowCycle@i i `i  1 a 2 23 ]
+"332
+[v rainbowCycle@j j `i  1 a 2 21 ]
+"320
+[v rainbowCycle@c c `*.30uc  1 a 1 25 ]
+"342
+} 0
+"79 D:\Microchip\Proyectos\NeoPixelController.X\Main.c
+[v _initiateLeds initiateLeds `(v  1 e 1 0 ]
+{
+"87
+} 0
+"16 D:\Microchip\Proyectos\NeoPixelController.X\Patterns.c
+[v _RGBLoop RGBLoop `(v  1 e 1 0 ]
+{
+"33
+[v RGBLoop@k_239 k `i  1 a 2 31 ]
+"20
+[v RGBLoop@k k `i  1 a 2 29 ]
+"18
+[v RGBLoop@j j `uc  1 a 1 28 ]
+"46
+} 0
+"197
+[v _fadeInOutRainbow fadeInOutRainbow `(v  1 e 1 0 ]
+{
+"213
+[v fadeInOutRainbow@i_273 i `uc  1 a 1 80 ]
+"201
+[v fadeInOutRainbow@i i `uc  1 a 1 79 ]
+"212
+[v fadeInOutRainbow@j_272 j `uc  1 a 1 83 ]
+"200
+[v fadeInOutRainbow@j j `uc  1 a 1 82 ]
+"199
+[v fadeInOutRainbow@b b `f  1 a 4 75 ]
+[v fadeInOutRainbow@g g `f  1 a 4 71 ]
+[v fadeInOutRainbow@r r `f  1 a 4 67 ]
+"198
+[v fadeInOutRainbow@c c `*.30uc  1 a 1 81 ]
+"224
+} 0
+"106
+[v _colorWipeRainbow colorWipeRainbow `(v  1 e 1 0 ]
+{
+"165
+[v colorWipeRainbow@i_258 i `i  1 a 2 29 ]
+"157
+[v colorWipeRainbow@i_257 i `i  1 a 2 34 ]
+"150
+[v colorWipeRainbow@i_256 i `i  1 a 2 27 ]
+"142
+[v colorWipeRainbow@i_255 i `i  1 a 2 32 ]
+"135
+[v colorWipeRainbow@i_254 i `i  1 a 2 25 ]
+"128
+[v colorWipeRainbow@i_253 i `i  1 a 2 23 ]
+"111
+[v colorWipeRainbow@i i `uc  1 a 1 31 ]
+"110
+[v colorWipeRainbow@j j `uc  1 a 1 36 ]
+"107
+[v colorWipeRainbow@c c `*.30uc  1 a 1 37 ]
+"173
+} 0
+"47
+[v _colorWipe colorWipe `(v  1 e 1 0 ]
+{
+"98
+[v colorWipe@i_248 i `i  1 a 2 33 ]
+"91
+[v colorWipe@i_247 i `i  1 a 2 31 ]
+"84
+[v colorWipe@i_246 i `i  1 a 2 29 ]
+"77
+[v colorWipe@i_245 i `i  1 a 2 27 ]
+"70
+[v colorWipe@i_244 i `i  1 a 2 23 ]
+"63
+[v colorWipe@i_243 i `i  1 a 2 21 ]
+"56
+[v colorWipe@i_242 i `uc  1 a 1 26 ]
+"49
+[v colorWipe@i i `uc  1 a 1 25 ]
+"105
+} 0
+"425
+[v _Strobe Strobe `(v  1 e 1 0 ]
+{
+"435
+} 0
+"475
+[v _SetAllcolors SetAllcolors `(v  1 e 1 0 ]
+{
+"481
+[v SetAllcolors@i i `i  1 a 2 30 ]
+"479
+[v SetAllcolors@j j `i  1 a 2 28 ]
+"476
+[v SetAllcolors@c c `*.30uc  1 a 1 32 ]
+"490
+} 0
+"343
+[v _SetAllColor SetAllColor `(v  1 e 1 0 ]
+{
+"391
+[v SetAllColor@i_309 i `i  1 a 2 32 ]
+"376
+[v SetAllColor@i_308 i `i  1 a 2 38 ]
+"353
+[v SetAllColor@i_307 i `i  1 a 2 36 ]
+"348
+[v SetAllColor@i i `i  1 a 2 28 ]
+"344
+[v SetAllColor@flag flag `i  1 a 2 34 ]
+[v SetAllColor@counter counter `i  1 a 2 30 ]
+"345
+[v SetAllColor@newBT newBT `*.30uc  1 a 1 40 ]
+"398
+} 0
+"400
+[v _staticWheel staticWheel `(*.30uc  1 e 2 0 ]
+{
+"406
+[v staticWheel@i_313 i `i  1 a 2 10 ]
+"402
+[v staticWheel@i i `i  1 a 2 5 ]
+"401
+[v staticWheel@temp temp `[3]uc  1 a 3 7 ]
+"424
+} 0
+"525
+[v _RunningLightsRainbow RunningLightsRainbow `(v  1 e 1 0 ]
+{
+"541
+[v RunningLightsRainbow@i_343 i `i  1 a 2 32 ]
+"533
+[v RunningLightsRainbow@i_342 i `i  1 a 2 30 ]
+"532
+[v RunningLightsRainbow@q q `i  1 a 2 28 ]
+"530
+[v RunningLightsRainbow@i i `i  1 a 2 26 ]
+"526
+[v RunningLightsRainbow@pixelOn pixelOn `i  1 a 2 24 ]
+"527
+[v RunningLightsRainbow@c c `*.30uc  1 a 1 34 ]
+"548
+} 0
+"491
+[v _RunningLights RunningLights `(v  1 e 1 0 ]
+{
+"503
+[v RunningLights@i_336 i `i  1 a 2 31 ]
+"496
+[v RunningLights@i i `i  1 a 2 29 ]
+"495
+[v RunningLights@q q `uc  1 a 1 28 ]
+"492
+[v RunningLights@pixelOn pixelOn `i  1 a 2 26 ]
+"524
+} 0
+"174
+[v _FadeInOut FadeInOut `(v  1 e 1 0 ]
+{
+"186
+[v FadeInOut@k_264 k `i  1 a 2 80 ]
+"177
+[v FadeInOut@k k `i  1 a 2 78 ]
+"175
+[v FadeInOut@b b `f  1 a 4 74 ]
+[v FadeInOut@g g `f  1 a 4 70 ]
+[v FadeInOut@r r `f  1 a 4 66 ]
+"196
+} 0
+"451
+[v _FadeAllcolors FadeAllcolors `(v  1 e 1 0 ]
+{
+"465
+[v FadeAllcolors@k_325 k `i  1 a 2 83 ]
+"457
+[v FadeAllcolors@k k `i  1 a 2 81 ]
+"455
+[v FadeAllcolors@j j `i  1 a 2 79 ]
+"453
+[v FadeAllcolors@b b `f  1 a 4 75 ]
+[v FadeAllcolors@g g `f  1 a 4 71 ]
+[v FadeAllcolors@r r `f  1 a 4 67 ]
+"452
+[v FadeAllcolors@c c `*.30uc  1 a 1 85 ]
+"474
+} 0
+"10 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 12 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 11 ]
+"10
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 2 ]
+"15
+[v ___xxtofl@sign sign `uc  1 a 1 10 ]
+"44
+} 0
+"43 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 11 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 10 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 2 ]
+"70
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+{
+[s S982 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+"13
+[s S987 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
+[u S990 . 4 `l 1 i 4 0 `d 1 f 4 0 `S982 1 fAsBytes 4 0 `S987 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S990  1 a 4 60 ]
+"12
+[v ___flmul@grs grs `ul  1 a 4 55 ]
+[s S1058 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+"14
+[u S1061 . 2 `s 1 i 2 0 `us 1 n 2 0 `S1058 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S1061  1 a 2 64 ]
+"10
+[v ___flmul@bexp bexp `uc  1 a 1 59 ]
+"11
+[v ___flmul@aexp aexp `uc  1 a 1 54 ]
+"9
+[v ___flmul@sign sign `uc  1 a 1 53 ]
+"8
+[v ___flmul@b b `d  1 p 4 41 ]
+[v ___flmul@a a `d  1 p 4 45 ]
+"205
+} 0
+"11 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+{
+"21
+[v ___fldiv@grs grs `ul  1 a 4 35 ]
+"22
+[v ___fldiv@rem rem `ul  1 a 4 28 ]
+"20
+[v ___fldiv@new_exp new_exp `s  1 a 2 33 ]
+"19
+[v ___fldiv@aexp aexp `uc  1 a 1 40 ]
+"18
+[v ___fldiv@bexp bexp `uc  1 a 1 39 ]
+"16
+[v ___fldiv@sign sign `uc  1 a 1 32 ]
+"11
+[v ___fldiv@b b `d  1 p 4 16 ]
+[v ___fldiv@a a `d  1 p 4 20 ]
+"185
+} 0
+"264 D:\Microchip\Proyectos\NeoPixelController.X\Patterns.c
+[v _CylonBounce CylonBounce `(v  1 e 1 0 ]
+{
+"280
+[v CylonBounce@j_289 j `uc  1 a 1 35 ]
+"269
+[v CylonBounce@j j `uc  1 a 1 34 ]
+"277
+[v CylonBounce@i_288 i `uc  1 a 1 36 ]
+"266
+[v CylonBounce@i i `uc  1 a 1 33 ]
+"264
+[v CylonBounce@EyeSize EyeSize `i  1 p 2 26 ]
+"288
+} 0
+"289
+[v _CycloneBounceRainbow CycloneBounceRainbow `(v  1 e 1 0 ]
+{
+"309
+[v CycloneBounceRainbow@j_297 j `uc  1 a 1 34 ]
+"297
+[v CycloneBounceRainbow@j_295 j `uc  1 a 1 33 ]
+"306
+[v CycloneBounceRainbow@i_296 i `uc  1 a 1 38 ]
+"294
+[v CycloneBounceRainbow@i i `uc  1 a 1 37 ]
+"293
+[v CycloneBounceRainbow@j j `i  1 a 2 35 ]
+"290
+[v CycloneBounceRainbow@c c `*.30uc  1 a 1 39 ]
+"289
+[v CycloneBounceRainbow@EyeSize EyeSize `i  1 p 2 26 ]
+"318
+} 0
+"17 D:\Microchip\Proyectos\NeoPixelController.X\NeoFunctions.c
+[v _setAll setAll `(v  1 e 1 0 ]
+{
+[v setAll@Red Red `uc  1 a 1 wreg ]
+"20
+[v setAll@i i `i  1 a 2 24 ]
+"17
+[v setAll@Red Red `uc  1 a 1 wreg ]
+[v setAll@Green Green `uc  1 p 1 21 ]
+[v setAll@Blue Blue `uc  1 p 1 22 ]
+"20
+[v setAll@Red Red `uc  1 a 1 23 ]
+"24
+} 0
+"26
+[v _setPixel setPixel `(v  1 e 1 0 ]
+{
+"28
+[v setPixel@ptr ptr `*.39i  1 a 2 19 ]
+"26
+[v setPixel@n n `i  1 p 2 12 ]
+[v setPixel@red red `uc  1 p 1 14 ]
+"27
+[v setPixel@green green `uc  1 p 1 15 ]
+[v setPixel@blue blue `uc  1 p 1 16 ]
+"39
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 6 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 2 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 4 ]
+"53
+} 0
+"5 D:\Microchip\Proyectos\NeoPixelController.X\NeoFunctions.c
+[v _Show Show `(v  1 e 1 0 ]
+{
+"8
+[v Show@i i `i  1 a 2 3 ]
+"6
+[v Show@ptrInicial ptrInicial `*.39i  1 a 2 5 ]
+"16
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\lbdiv.c
+[v ___lbdiv __lbdiv `(uc  1 e 1 0 ]
+{
+[v ___lbdiv@dividend dividend `uc  1 a 1 wreg ]
+"6
+[v ___lbdiv@quotient quotient `uc  1 a 1 5 ]
+"7
+[v ___lbdiv@counter counter `uc  1 a 1 4 ]
+"4
+[v ___lbdiv@dividend dividend `uc  1 a 1 wreg ]
+[v ___lbdiv@divisor divisor `uc  1 p 1 2 ]
+"9
+[v ___lbdiv@dividend dividend `uc  1 a 1 3 ]
+"26
+} 0
+"7 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 14 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 13 ]
+[v ___awdiv@counter counter `uc  1 a 1 12 ]
+"7
+[v ___awdiv@dividend dividend `i  1 p 2 8 ]
+[v ___awdiv@divisor divisor `i  1 p 2 10 ]
+"41
+} 0
+"549 D:\Microchip\Proyectos\NeoPixelController.X\Patterns.c
+[v _Wheel Wheel `(*.30uc  1 e 2 0 ]
+{
+[v Wheel@WheelPos WheelPos `i  1 p 2 16 ]
+"550
+[v Wheel@c c `[3]uc  1 s 3 c ]
+"585
+} 0
+"586
+[v _Time_Check Time_Check `(v  1 e 1 0 ]
+{
+[v Time_Check@Time Time `i  1 p 2 2 ]
+"591
+} 0
+"592
+[v _Delay_ms Delay_ms `(v  1 e 1 0 ]
+{
+"593
+[v Delay_ms@l l `i  1 a 2 5 ]
+"592
+[v Delay_ms@time time `i  1 p 2 2 ]
+"600
+} 0
+"14 D:\Microchip\Proyectos\NeoPixelController.X\Settings.c
+[v _Config4550 Config4550 `(v  1 e 1 0 ]
+{
+"51
+} 0
+"13 D:\Microchip\Proyectos\NeoPixelController.X\Main.c
+[v _ISR ISR `IIH(v  1 e 1 0 ]
+{
+"24
+} 0
+"26
+[v _checkBuff checkBuff `(v  1 e 1 0 ]
+{
+"71
+} 0
